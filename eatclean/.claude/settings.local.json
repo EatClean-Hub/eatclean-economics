@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Read(//private/tmp/eatclean_cashflow_2026/**)",
+      "Bash(cp /tmp/eatclean_cashflow_2026/Cash_Flow_2026.xlsx ~/Desktop/Cash_Flow_2026.xlsx)",
+      "Bash(tee quick_check_4.txt)"
+    ]
+  }
+}

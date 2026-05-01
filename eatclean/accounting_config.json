@@ -1,0 +1,2247 @@
+{
+  "accounting_folder_id": "1XkmMgLanlHSwCmtAOEAn_NGI69e1VYGr",
+  "accounting_folder_name": "Accounting",
+  "structure": [
+    {
+      "id": "1qDwlchZkoylOmOpsVnumyRu1mE5NIIph",
+      "name": "2025",
+      "path": "2025",
+      "type": "folder",
+      "mimeType": "application/vnd.google-apps.folder",
+      "size_kb": 0,
+      "modified": "2026-04-24T06:47:16.577Z",
+      "children": [
+        {
+          "id": "1lBy-MFcKTjrdzaAv3AQycmL2px-4S3x1",
+          "name": "August 2025",
+          "path": "2025/August 2025",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2025-09-09T05:46:06.331Z",
+          "children": [
+            {
+              "id": "1963-ypc4VitlgTtoQhci08qmFZOT9Nvo",
+              "name": "Bank statements",
+              "path": "2025/August 2025/Bank statements",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-09-09T06:29:33.542Z",
+              "children": [
+                {
+                  "id": "1W_OPoNKmTjKnj1XbjQYJH4uZF1pkzzDz",
+                  "name": "Account_Statement_019100409172.pdf",
+                  "path": "2025/August 2025/Bank statements/Account_Statement_019100409172.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 120,
+                  "modified": "2025-09-09T05:43:45.000Z"
+                },
+                {
+                  "id": "1Vhc9UxJ4jb7AhqWa2xRNJxD_fO6iXCOg",
+                  "name": "Account_Statement_019100409172.xlsx",
+                  "path": "2025/August 2025/Bank statements/Account_Statement_019100409172.xlsx",
+                  "type": "file",
+                  "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "size_kb": 7,
+                  "modified": "2025-09-09T05:43:42.000Z"
+                },
+                {
+                  "id": "1y8r627Szr27nBzQCgYjv2rFwDuIs6yrN",
+                  "name": "statement(Aug 1, 2025 - Aug 31, 2025).csv",
+                  "path": "2025/August 2025/Bank statements/statement(Aug 1, 2025 - Aug 31, 2025).csv",
+                  "type": "file",
+                  "mimeType": "text/csv",
+                  "size_kb": 2,
+                  "modified": "2025-09-09T05:41:49.000Z"
+                },
+                {
+                  "id": "1lJNMo8gUNTIa1E_Dl8lmt7YOz1pCOrw1",
+                  "name": "statement(Aug 1, 2025 - Aug 31, 2025).pdf",
+                  "path": "2025/August 2025/Bank statements/statement(Aug 1, 2025 - Aug 31, 2025).pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 94,
+                  "modified": "2025-09-09T05:42:02.000Z"
+                }
+              ]
+            },
+            {
+              "id": "1IMLtuf3X-FqiFsJOgDHbtQN2vBhCOerB",
+              "name": "Invoices",
+              "path": "2025/August 2025/Invoices",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-09-09T06:30:28.866Z",
+              "children": [
+                {
+                  "id": "1e0knCI9nBANv3yywPrxdoT6HjLfdwd-R",
+                  "name": "2025-6524. (1) PAID.pdf",
+                  "path": "2025/August 2025/Invoices/2025-6524. (1) PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 595,
+                  "modified": "2025-08-11T06:01:48.000Z"
+                },
+                {
+                  "id": "1oQk0CC4enFQRadXVl6BEN6NIyAz_b-8_",
+                  "name": "5531956020242031_20250731.pdf",
+                  "path": "2025/August 2025/Invoices/5531956020242031_20250731.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 95,
+                  "modified": "2025-08-15T11:47:42.000Z"
+                },
+                {
+                  "id": "1KWknm6nj-LEdvoUiPZQnflPyCGfRWSmE",
+                  "name": "Eat_Clean_406856096.pdf",
+                  "path": "2025/August 2025/Invoices/Eat_Clean_406856096.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 58,
+                  "modified": "2025-08-20T09:16:07.000Z"
+                },
+                {
+                  "id": "1AHmwRy-hV7HYTFse-3w40aR1etrJXfpj",
+                  "name": "EC_BSI25-317_4.8.2025 PAID.pdf",
+                  "path": "2025/August 2025/Invoices/EC_BSI25-317_4.8.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 61,
+                  "modified": "2025-08-15T11:37:56.000Z"
+                },
+                {
+                  "id": "1GqSN-bFsl0E_baq8xKdfuSpKzuUCT-NR",
+                  "name": "EC_BSI25-319_11.8.2025 PAID.pdf",
+                  "path": "2025/August 2025/Invoices/EC_BSI25-319_11.8.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 61,
+                  "modified": "2025-08-15T11:37:58.000Z"
+                },
+                {
+                  "id": "1RPpOgHCUzaGgfsW7kL4itjir9O2nsirg",
+                  "name": "EC_BSI25-322_18.8.2025 PAID.pdf",
+                  "path": "2025/August 2025/Invoices/EC_BSI25-322_18.8.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 67,
+                  "modified": "2025-08-29T09:09:28.000Z"
+                },
+                {
+                  "id": "1ok676NJuXt-gIAjupV5qV_wjucubmLNF",
+                  "name": "EC_BSI25-326_25.8.2025.pdf",
+                  "path": "2025/August 2025/Invoices/EC_BSI25-326_25.8.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 61,
+                  "modified": "2025-08-29T09:09:34.000Z"
+                },
+                {
+                  "id": "1TjMiB7ohgwcSEcF0fNSiB-8xt1D9c88M",
+                  "name": "EC_BSI25-331_31.8.2025.pdf",
+                  "path": "2025/August 2025/Invoices/EC_BSI25-331_31.8.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 61,
+                  "modified": "2025-09-09T05:40:35.000Z"
+                },
+                {
+                  "id": "1rbEytCcTgBX9RPq4Ka1Wj18zF5g2b-GV",
+                  "name": "INV- Eat Clean.pdf",
+                  "path": "2025/August 2025/Invoices/INV- Eat Clean.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 34,
+                  "modified": "2025-09-08T10:27:42.000Z"
+                },
+                {
+                  "id": "1TdQv481owqxHMc3H06q55sBnIHxLAj2e",
+                  "name": "LGX05662 PAID.pdf",
+                  "path": "2025/August 2025/Invoices/LGX05662 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 84,
+                  "modified": "2025-08-22T07:08:01.000Z"
+                },
+                {
+                  "id": "1KPU199023p09AwJ28Fs1YL0_0u-0Jare",
+                  "name": "LGX05685.pdf",
+                  "path": "2025/August 2025/Invoices/LGX05685.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 84,
+                  "modified": "2025-09-02T14:37:46.000Z"
+                },
+                {
+                  "id": "1jhKxcFV8PCG_0a6hrx2HoPd7uxyQNjSd",
+                  "name": "Paid from other acconts - Repayment ",
+                  "path": "2025/August 2025/Invoices/Paid from other acconts - Repayment ",
+                  "type": "folder",
+                  "mimeType": "application/vnd.google-apps.folder",
+                  "size_kb": 0,
+                  "modified": "2025-09-09T06:35:18.381Z",
+                  "children": [
+                    {
+                      "id": "1rqb8zZueGmikqqdc7PTHztYxIjFFkELl",
+                      "name": "CSVDSO202500037287.pdf",
+                      "path": "2025/August 2025/Invoices/Paid from other acconts - Repayment /CSVDSO202500037287.pdf",
+                      "type": "file",
+                      "mimeType": "application/pdf",
+                      "size_kb": 12,
+                      "modified": "2025-09-04T12:27:47.000Z"
+                    },
+                    {
+                      "id": "1K6UG9bvA2ppbHR-hHuBrbdT7xNlV8rPU",
+                      "name": "GSDDSO202500036762.pdf",
+                      "path": "2025/August 2025/Invoices/Paid from other acconts - Repayment /GSDDSO202500036762.pdf",
+                      "type": "file",
+                      "mimeType": "application/pdf",
+                      "size_kb": 12,
+                      "modified": "2025-09-04T12:27:51.000Z"
+                    },
+                    {
+                      "id": "1R_fYNNRlLTHTRLyeGiHObSNZkzEb-GCn",
+                      "name": "LICDSO202500032983.pdf",
+                      "path": "2025/August 2025/Invoices/Paid from other acconts - Repayment /LICDSO202500032983.pdf",
+                      "type": "file",
+                      "mimeType": "application/pdf",
+                      "size_kb": 12,
+                      "modified": "2025-09-04T12:27:40.000Z"
+                    },
+                    {
+                      "id": "13OtHD-8zDcQc5jhmQfOQXa8ih5r47kCf",
+                      "name": "LN60232641592431 Kitchen Personal.pdf",
+                      "path": "2025/August 2025/Invoices/Paid from other acconts - Repayment /LN60232641592431 Kitchen Personal.pdf",
+                      "type": "file",
+                      "mimeType": "application/pdf",
+                      "size_kb": 26,
+                      "modified": "2025-09-04T06:27:55.000Z"
+                    },
+                    {
+                      "id": "1HJMO5r-WDIyGOE9ZnA3-KEClxOgo7ELy",
+                      "name": "LN66902566473747 Kitchen Personal.pdf",
+                      "path": "2025/August 2025/Invoices/Paid from other acconts - Repayment /LN66902566473747 Kitchen Personal.pdf",
+                      "type": "file",
+                      "mimeType": "application/pdf",
+                      "size_kb": 26,
+                      "modified": "2025-09-04T06:27:19.000Z"
+                    },
+                    {
+                      "id": "1s-lNGAjGNlUwIydy-cQ5szBoBLDEmJJW",
+                      "name": "noon-doc-80038888.pdf",
+                      "path": "2025/August 2025/Invoices/Paid from other acconts - Repayment /noon-doc-80038888.pdf",
+                      "type": "file",
+                      "mimeType": "application/pdf",
+                      "size_kb": 18,
+                      "modified": "2025-09-04T12:28:58.000Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "1m7Yk8C9XKueBVYVM_puqhRHg1YxWG4iP",
+                  "name": "Statement Of Account- Eat Clean.pdf",
+                  "path": "2025/August 2025/Invoices/Statement Of Account- Eat Clean.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 733,
+                  "modified": "2025-09-08T10:27:41.000Z"
+                },
+                {
+                  "id": "1kMZl0zHkfaHTZ0_4QiH6-RK5PnXhbgn9",
+                  "name": "Stripe Tax Invoice JOUHVU98-2025-07-RC.pdf",
+                  "path": "2025/August 2025/Invoices/Stripe Tax Invoice JOUHVU98-2025-07-RC.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 37,
+                  "modified": "2025-08-22T10:26:40.000Z"
+                },
+                {
+                  "id": "1B7MDHgUcxU5VK3pHhjagOqZhDh3s3mRc",
+                  "name": "Tax Invoice 25072 - Eat Clean August.pdf",
+                  "path": "2025/August 2025/Invoices/Tax Invoice 25072 - Eat Clean August.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 665,
+                  "modified": "2025-09-15T15:51:55.000Z"
+                },
+                {
+                  "id": "14rHdMtgEW0aQ6M7VdKI6CNRRxS54UUoa",
+                  "name": "W140725379878LOC.pdf",
+                  "path": "2025/August 2025/Invoices/W140725379878LOC.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 30,
+                  "modified": "2025-07-14T07:59:16.000Z"
+                }
+              ]
+            },
+            {
+              "id": "1U5dr0zaVNpM2NIKcHtMLCA1waaiukylq",
+              "name": "Loan Agreement",
+              "path": "2025/August 2025/Loan Agreement",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-09-09T06:37:53.572Z",
+              "children": [
+                {
+                  "id": "1o3nFnTQgDlejKuJUPYAy7mjTZB1nNNFb",
+                  "name": "Loan Agreement 27:08:2024 signed.pdf",
+                  "path": "2025/August 2025/Loan Agreement/Loan Agreement 27:08:2024 signed.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 313,
+                  "modified": "2025-09-09T05:36:14.000Z"
+                },
+                {
+                  "id": "1atZFCM4rvMM1_x0a299w32aFl6XavNNt",
+                  "name": "Loan request_1_27.08.2025.pdf",
+                  "path": "2025/August 2025/Loan Agreement/Loan request_1_27.08.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 305,
+                  "modified": "2025-09-09T05:31:41.000Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1TCZMXaQ6LqVRKo8uPyt6sXDiDkvcnXSj",
+          "name": "December 2025",
+          "path": "2025/December 2025",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-01-07T09:25:01.540Z",
+          "children": [
+            {
+              "id": "1PfLjqP_Uf9ytXyAW-wkXXR_S3dNic8Tg",
+              "name": "Bank statement",
+              "path": "2025/December 2025/Bank statement",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2026-01-07T09:25:18.981Z",
+              "children": [
+                {
+                  "id": "1tC0CcmwUQLRUvrHWfzbf0wwQYUHkeV0n",
+                  "name": "Account_Statement_019100409172-4.pdf",
+                  "path": "2025/December 2025/Bank statement/Account_Statement_019100409172-4.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 59,
+                  "modified": "2026-01-07T09:24:35.000Z"
+                },
+                {
+                  "id": "1qQ2T-8Hogses2jr0-JNi2dTDKDgERbGN",
+                  "name": "Account_Statement_019100409172.xlsx",
+                  "path": "2025/December 2025/Bank statement/Account_Statement_019100409172.xlsx",
+                  "type": "file",
+                  "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "size_kb": 4,
+                  "modified": "2026-01-07T09:24:32.000Z"
+                },
+                {
+                  "id": "1fUoXQHhfl5Gb3lP2bRd7EsFoAcKxdN-5",
+                  "name": "statement(Dec 1, 2025 - Dec 31, 2025).csv",
+                  "path": "2025/December 2025/Bank statement/statement(Dec 1, 2025 - Dec 31, 2025).csv",
+                  "type": "file",
+                  "mimeType": "text/csv",
+                  "size_kb": 11,
+                  "modified": "2026-01-07T09:23:02.000Z"
+                },
+                {
+                  "id": "1s9fgERyPg9NGl9p7mIFuUP4ox6In0t-B",
+                  "name": "statement(Dec 1, 2025 - Dec 31, 2025).pdf",
+                  "path": "2025/December 2025/Bank statement/statement(Dec 1, 2025 - Dec 31, 2025).pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 109,
+                  "modified": "2026-01-07T09:22:48.000Z"
+                }
+              ]
+            },
+            {
+              "id": "1EHzaOEagsUssv94KOlZvSMagpoDuFE__",
+              "name": "Invoices",
+              "path": "2025/December 2025/Invoices",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2026-01-07T09:25:51.092Z",
+              "children": [
+                {
+                  "id": "11dc4iL9jkCWN-M2PHr-VzpbhbUULaMqI",
+                  "name": "11416-2025.pdf",
+                  "path": "2025/December 2025/Invoices/11416-2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 293,
+                  "modified": "2026-01-07T09:34:28.000Z"
+                },
+                {
+                  "id": "1vBpBv0inJvJUVFOWx_-IlGp3XE81MBBL",
+                  "name": "2025-12-23T00-28 Transaction #25344326118586826-25333818126304296.pdf",
+                  "path": "2025/December 2025/Invoices/2025-12-23T00-28 Transaction #25344326118586826-25333818126304296.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 1030,
+                  "modified": "2026-01-07T09:41:32.000Z"
+                },
+                {
+                  "id": "1WevVYxY4xcyCrdDOONcvkrb8fxeWXZ3c",
+                  "name": "5531956020242031_20251231.pdf",
+                  "path": "2025/December 2025/Invoices/5531956020242031_20251231.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 96,
+                  "modified": "2026-01-07T09:44:09.000Z"
+                },
+                {
+                  "id": "1pMAI5DCBgweWIV1tACfwFkXauZoHvk0f",
+                  "name": "eat-clean-invoice-2025-12-31.pdf",
+                  "path": "2025/December 2025/Invoices/eat-clean-invoice-2025-12-31.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 36,
+                  "modified": "2026-01-09T09:17:45.000Z"
+                },
+                {
+                  "id": "1IRVSTPqGikcJClGuyibpkC3vCCAZFgsY",
+                  "name": "eat-clean-statement-of-account-2025-12-31.pdf",
+                  "path": "2025/December 2025/Invoices/eat-clean-statement-of-account-2025-12-31.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 195,
+                  "modified": "2026-01-09T09:17:55.000Z"
+                },
+                {
+                  "id": "1vqyvXUQv1mO9S9uQ-ff3pWi3YHu6Nz4N",
+                  "name": "EC_BSI25-529_08.12.2025 PAID.pdf",
+                  "path": "2025/December 2025/Invoices/EC_BSI25-529_08.12.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 199,
+                  "modified": "2025-12-10T06:06:15.000Z"
+                },
+                {
+                  "id": "1Z4WIhqzAmIzKjEl_1D2OUhVbEAMBFsws",
+                  "name": "EC_BSI25-533_15.12.2025 PAID.pdf",
+                  "path": "2025/December 2025/Invoices/EC_BSI25-533_15.12.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 198,
+                  "modified": "2025-12-17T10:59:27.000Z"
+                },
+                {
+                  "id": "1ROIYF7FVxEGrNslB02sMVhrt3gocXtNa",
+                  "name": "EC_BSI25-538_22.12.2025.pdf",
+                  "path": "2025/December 2025/Invoices/EC_BSI25-538_22.12.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 198,
+                  "modified": "2025-12-23T16:15:53.000Z"
+                },
+                {
+                  "id": "1fuee_TAf__UPhqWAZzEYMBBiTS-XhMQP",
+                  "name": "EC_BSI25-542_29.12.2025.pdf",
+                  "path": "2025/December 2025/Invoices/EC_BSI25-542_29.12.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 199,
+                  "modified": "2025-12-30T04:49:49.000Z"
+                },
+                {
+                  "id": "1ZxcLOI4ly3yMEJ9R3PX7Tv2k3VR-iu_k",
+                  "name": "EC_BSI25-547_31.12.2025.pdf",
+                  "path": "2025/December 2025/Invoices/EC_BSI25-547_31.12.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 199,
+                  "modified": "2026-01-03T04:57:19.000Z"
+                },
+                {
+                  "id": "158g4gTqjifYd8GwNkbAmQ31bs5_Nr6Ou",
+                  "name": "invoice-118-2026.pdf",
+                  "path": "2025/December 2025/Invoices/invoice-118-2026.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 31,
+                  "modified": "2026-01-07T09:31:35.000Z"
+                },
+                {
+                  "id": "1jdKg5h16dIarIEfS7YGfoISzpz1xJKiI",
+                  "name": "invoice_461981594_2.pdf",
+                  "path": "2025/December 2025/Invoices/invoice_461981594_2.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 58,
+                  "modified": "2026-01-08T06:37:55.000Z"
+                },
+                {
+                  "id": "1XVeuPcbtsryYj1s1zQo52-ZpZ0tjccWP",
+                  "name": "Invoice_CP8808318-53988_010702026.pdf",
+                  "path": "2025/December 2025/Invoices/Invoice_CP8808318-53988_010702026.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 14,
+                  "modified": "2026-01-07T09:45:26.000Z"
+                },
+                {
+                  "id": "1KLPx8QXGMHEy_8WyW1E00yRIZ2CH8xA9",
+                  "name": "LGX06105 PAID.pdf",
+                  "path": "2025/December 2025/Invoices/LGX06105 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 83,
+                  "modified": "2026-01-03T05:44:00.000Z"
+                },
+                {
+                  "id": "1fD5suXFFGye3JLeSnunDRrVcQg-wCXvF",
+                  "name": "LGX06107.pdf",
+                  "path": "2025/December 2025/Invoices/LGX06107.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 83,
+                  "modified": "2026-01-03T05:44:19.000Z"
+                },
+                {
+                  "id": "1t3tjcfhrZ6BKNVfx_C5HjlPK-oKS39dw",
+                  "name": "Stripe Tax Invoice JOUHVU98-2025-12-RC.pdf",
+                  "path": "2025/December 2025/Invoices/Stripe Tax Invoice JOUHVU98-2025-12-RC.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 37,
+                  "modified": "2026-01-07T09:29:03.000Z"
+                }
+              ]
+            },
+            {
+              "id": "1wbyQC6NHsN2c4xMJc7Ygwp5S-tB2qWJN",
+              "name": "Report",
+              "path": "2025/December 2025/Report",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2026-01-20T10:11:39.748Z",
+              "children": [
+                {
+                  "id": "1LekgumiihWYKCvbfJUOLGgNH0H4sf-tK",
+                  "name": "Balance Sheet As of 31 Dec 2025.pdf",
+                  "path": "2025/December 2025/Report/Balance Sheet As of 31 Dec 2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 22,
+                  "modified": "2026-01-21T04:04:48.000Z"
+                },
+                {
+                  "id": "17tO-Gz1wUf9H2mVQ1CQtLmwvM6K8tg-h",
+                  "name": "CAC- FST.xlsx",
+                  "path": "2025/December 2025/Report/CAC- FST.xlsx",
+                  "type": "file",
+                  "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "size_kb": 88,
+                  "modified": "2026-01-13T05:36:15.000Z"
+                },
+                {
+                  "id": "1L_GFUPb_PTAhJFqfH9F6P7ccpwaZ6syn",
+                  "name": "INCOME STATEMENT FST - Updated_Till December 2025.xlsx",
+                  "path": "2025/December 2025/Report/INCOME STATEMENT FST - Updated_Till December 2025.xlsx",
+                  "type": "file",
+                  "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "size_kb": 222,
+                  "modified": "2026-01-23T12:01:45.700Z"
+                },
+                {
+                  "id": "130T88WWaYsBGPNVcp8xMJQCvZ1gMHQAb",
+                  "name": "Profit and Loss From 01 Oct 2025 To 31 Dec 2025.pdf",
+                  "path": "2025/December 2025/Report/Profit and Loss From 01 Oct 2025 To 31 Dec 2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 19,
+                  "modified": "2026-01-23T12:04:56.000Z"
+                },
+                {
+                  "id": "1AFye5JOJSxihBgjxGBcLOL8ass7k97rU",
+                  "name": "Revenue analyze.xlsx",
+                  "path": "2025/December 2025/Report/Revenue analyze.xlsx",
+                  "type": "file",
+                  "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "size_kb": 12,
+                  "modified": "2026-01-13T05:36:21.000Z"
+                },
+                {
+                  "id": "1HtNwcQLWBDmxUwrgGSHWbwa8OSVPjAkS",
+                  "name": "VAT 201 Return (92).pdf",
+                  "path": "2025/December 2025/Report/VAT 201 Return (92).pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 85,
+                  "modified": "2026-01-21T03:55:35.000Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1ka6ZOMtfqSwyoFaNeoZDdfNn9q75LBAA",
+          "name": "November 2025",
+          "path": "2025/November 2025",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2025-12-02T06:47:37.043Z",
+          "children": [
+            {
+              "id": "1CcgmEuiF8VP0wLfGtluxL5u2Nscm6wcl",
+              "name": "Bank Statements",
+              "path": "2025/November 2025/Bank Statements",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-12-02T06:47:49.507Z",
+              "children": [
+                {
+                  "id": "1lkyUt4A8St1WYIzwUy7oN_laNZfPxmIb",
+                  "name": "Account_Statement_019100409172.pdf",
+                  "path": "2025/November 2025/Bank Statements/Account_Statement_019100409172.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 61,
+                  "modified": "2025-12-02T06:54:04.000Z"
+                },
+                {
+                  "id": "1kqM99GqPbYJylMWH5SFHvroHiZ0hzcEm",
+                  "name": "Account_Statement_019100409172.xlsx",
+                  "path": "2025/November 2025/Bank Statements/Account_Statement_019100409172.xlsx",
+                  "type": "file",
+                  "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "size_kb": 4,
+                  "modified": "2025-12-02T06:54:02.000Z"
+                },
+                {
+                  "id": "1COWafQowWA0tGsx4ZpOc_O8bPS6u3jut",
+                  "name": "statement(Nov 1, 2025 - Nov 30, 2025).csv",
+                  "path": "2025/November 2025/Bank Statements/statement(Nov 1, 2025 - Nov 30, 2025).csv",
+                  "type": "file",
+                  "mimeType": "text/csv",
+                  "size_kb": 10,
+                  "modified": "2025-12-02T06:48:31.000Z"
+                },
+                {
+                  "id": "1RpWmGM8LFEQlzDCyP1B0RMZpjyjT0DOf",
+                  "name": "statement(Nov 1, 2025 - Nov 30, 2025).pdf",
+                  "path": "2025/November 2025/Bank Statements/statement(Nov 1, 2025 - Nov 30, 2025).pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 110,
+                  "modified": "2025-12-02T06:48:40.000Z"
+                }
+              ]
+            },
+            {
+              "id": "1GuTbRO354Rw5RTBPtOo_XYPI_afa9PAf",
+              "name": "Invoices",
+              "path": "2025/November 2025/Invoices",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-12-02T06:47:55.982Z",
+              "children": [
+                {
+                  "id": "159_dkve2ZAua5821JY9nvbC6pJu_NEX5",
+                  "name": "2025-11-01--2025-12-01_Invoice_Summary.pdf",
+                  "path": "2025/November 2025/Invoices/2025-11-01--2025-12-01_Invoice_Summary.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 1022,
+                  "modified": "2025-12-04T14:12:20.000Z"
+                },
+                {
+                  "id": "1v6oMJCXu-pMDRFnCCX-NT4Yf9Xcr94aK",
+                  "name": "2025-9621 PAID.pdf",
+                  "path": "2025/November 2025/Invoices/2025-9621 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 881,
+                  "modified": "2025-11-18T07:14:57.000Z"
+                },
+                {
+                  "id": "1iZDh0q-hO3c0soC3uDpLlrKSDeIzyWtD",
+                  "name": "20251130_C-INV-UAE-365046_Tabby LLC-FZ.pdf",
+                  "path": "2025/November 2025/Invoices/20251130_C-INV-UAE-365046_Tabby LLC-FZ.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 149,
+                  "modified": "2025-12-10T06:01:11.000Z"
+                },
+                {
+                  "id": "18Ip-U7AHjw2BN8s0T6kaNjFw90z7TBmY",
+                  "name": "charges_export.csv",
+                  "path": "2025/November 2025/Invoices/charges_export.csv",
+                  "type": "file",
+                  "mimeType": "text/csv",
+                  "size_kb": 2,
+                  "modified": "2025-12-04T10:50:26.000Z"
+                },
+                {
+                  "id": "1nwP5CLvKGe8qYbRLKJAVREz_Q2QBg4IA",
+                  "name": "eat-clean-invoice-2025-11-30.pdf",
+                  "path": "2025/November 2025/Invoices/eat-clean-invoice-2025-11-30.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 36,
+                  "modified": "2025-12-10T06:02:23.000Z"
+                },
+                {
+                  "id": "1OOVqL_ihygI20jEnKacTnUSDjpgM0c9Z",
+                  "name": "eat-clean-statement-of-account-2025-11-30.pdf",
+                  "path": "2025/November 2025/Invoices/eat-clean-statement-of-account-2025-11-30.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 194,
+                  "modified": "2025-12-15T04:59:25.000Z"
+                },
+                {
+                  "id": "1pOq6D46JSp0N3IJttDvQwVr3FXbsgHXK",
+                  "name": "EC_BSI25-486_10.11.2025 PAID.pdf",
+                  "path": "2025/November 2025/Invoices/EC_BSI25-486_10.11.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 201,
+                  "modified": "2025-11-14T05:55:07.000Z"
+                },
+                {
+                  "id": "14MMvt-ook-fzf74A7Fo9nwGCkNdx9DiR",
+                  "name": "EC_BSI25-489_17.11.2025 PAID.pdf",
+                  "path": "2025/November 2025/Invoices/EC_BSI25-489_17.11.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 173,
+                  "modified": "2025-11-19T07:30:58.000Z"
+                },
+                {
+                  "id": "142-hKcb-hsu8CRa0i5epQQncUIfZ948p",
+                  "name": "EC_BSI25-491_24.11.2025.pdf",
+                  "path": "2025/November 2025/Invoices/EC_BSI25-491_24.11.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 199,
+                  "modified": "2025-11-26T06:25:38.000Z"
+                },
+                {
+                  "id": "1agM2i0VVEg9zv0ul6hyb2N2v3Jc3R1I3",
+                  "name": "EC_BSI25-500_30.11.2025.pdf",
+                  "path": "2025/November 2025/Invoices/EC_BSI25-500_30.11.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 198,
+                  "modified": "2025-12-04T10:33:07.000Z"
+                },
+                {
+                  "id": "1fNOTWTxq2A0VYG3dR-R05FKpqKKq_7o-",
+                  "name": "Google Ads November 2025.pdf",
+                  "path": "2025/November 2025/Invoices/Google Ads November 2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 95,
+                  "modified": "2025-12-04T10:48:49.000Z"
+                },
+                {
+                  "id": "1SGQGLgWE9pTZaw5pew-e37EUfy66i--E",
+                  "name": "invoice-2337-2025.pdf",
+                  "path": "2025/November 2025/Invoices/invoice-2337-2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 31,
+                  "modified": "2025-12-02T13:34:26.000Z"
+                },
+                {
+                  "id": "1rmyE_s_ySgL0s_etPjO0C-pgftsPZmDk",
+                  "name": "invoice_447867737_2.pdf",
+                  "path": "2025/November 2025/Invoices/invoice_447867737_2.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 59,
+                  "modified": "2025-12-04T10:51:12.000Z"
+                },
+                {
+                  "id": "1ui7rGCQwWDiO5-yQErgnXIhbK2LO0prh",
+                  "name": "Invoice_CP8612345-53988_120402025.pdf",
+                  "path": "2025/November 2025/Invoices/Invoice_CP8612345-53988_120402025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 14,
+                  "modified": "2025-12-04T11:10:00.000Z"
+                },
+                {
+                  "id": "1t0Av3vo-3qip9AADj6518-MMkAK3NTUU",
+                  "name": "LGX05902 PAID.pdf",
+                  "path": "2025/November 2025/Invoices/LGX05902 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 83,
+                  "modified": "2025-11-03T08:23:21.000Z"
+                },
+                {
+                  "id": "1NsPRC4XI41vXtpbhZairzVfFOsZyMRrN",
+                  "name": "LGX05991.pdf",
+                  "path": "2025/November 2025/Invoices/LGX05991.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 83,
+                  "modified": "2025-11-26T09:33:40.000Z"
+                },
+                {
+                  "id": "1Dh4Bpev1oCikdj4mEfqoMQRB7hpNEiys",
+                  "name": "sme-pvt-invoice-33912.pdf",
+                  "path": "2025/November 2025/Invoices/sme-pvt-invoice-33912.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 73,
+                  "modified": "2025-11-05T09:22:19.000Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1Xbg63jxVqXnKFep-7U1z1pnHjsCy1-oW",
+          "name": "October 2025",
+          "path": "2025/October 2025",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2025-11-01T09:11:28.584Z",
+          "children": [
+            {
+              "id": "1E0AN9o4g58YZoRi5nMQOS1F4YVMgMyn9",
+              "name": "Bank statements",
+              "path": "2025/October 2025/Bank statements",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-11-01T09:11:41.560Z",
+              "children": [
+                {
+                  "id": "1ufQTnRQj3VZyCVAsi0ahf3YdnvIg056A",
+                  "name": "Account_Statement_019100409172.pdf",
+                  "path": "2025/October 2025/Bank statements/Account_Statement_019100409172.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 65,
+                  "modified": "2025-11-01T09:12:35.000Z"
+                },
+                {
+                  "id": "1bHLL50_EmwNdbB9H7xo258hJrvmzzFy_",
+                  "name": "Account_Statement_019100409172.xlsx",
+                  "path": "2025/October 2025/Bank statements/Account_Statement_019100409172.xlsx",
+                  "type": "file",
+                  "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "size_kb": 4,
+                  "modified": "2025-11-01T09:12:32.000Z"
+                },
+                {
+                  "id": "1_boEz2nZKv-xE0ajQRJ5Wu5dR5YBXLN9",
+                  "name": "statement(Oct 1, 2025 - Oct 31, 2025).csv",
+                  "path": "2025/October 2025/Bank statements/statement(Oct 1, 2025 - Oct 31, 2025).csv",
+                  "type": "file",
+                  "mimeType": "text/csv",
+                  "size_kb": 11,
+                  "modified": "2025-11-01T09:14:10.000Z"
+                },
+                {
+                  "id": "15qLwkozLRDzPx_0g51r3ByCdJLChfITA",
+                  "name": "statement(Oct 1, 2025 - Oct 31, 2025).pdf",
+                  "path": "2025/October 2025/Bank statements/statement(Oct 1, 2025 - Oct 31, 2025).pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 112,
+                  "modified": "2025-11-01T09:14:49.000Z"
+                }
+              ]
+            },
+            {
+              "id": "1iSEiFeyRuWaI9CyV5tlPM9Btu8Q6xrdT",
+              "name": "Invoices",
+              "path": "2025/October 2025/Invoices",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-11-01T09:11:46.645Z",
+              "children": [
+                {
+                  "id": "1wBLgdCJAgI8w8ccZ6r6WVnSvTQrcb4j6",
+                  "name": "15582_Food Solution Tech PAID.pdf",
+                  "path": "2025/October 2025/Invoices/15582_Food Solution Tech PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 403,
+                  "modified": "2025-09-24T11:40:52.000Z"
+                },
+                {
+                  "id": "1zlgJBAbWR94jWW5kiodEvApmJlIdHA0B",
+                  "name": "5531956020242031_20251031.pdf",
+                  "path": "2025/October 2025/Invoices/5531956020242031_20251031.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 96,
+                  "modified": "2025-11-05T09:25:35.000Z"
+                },
+                {
+                  "id": "127ljlHp6zhexIhSdu_zPmtehlnfhELaR",
+                  "name": "eat-clean-invoice-2025-10-31.pdf",
+                  "path": "2025/October 2025/Invoices/eat-clean-invoice-2025-10-31.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 36,
+                  "modified": "2025-11-12T09:42:31.000Z"
+                },
+                {
+                  "id": "1VyzrceuIrOOjYhluKSUgyLCcMUi8R-D-",
+                  "name": "eat-clean-statement-of-account-2025-10-31.pdf",
+                  "path": "2025/October 2025/Invoices/eat-clean-statement-of-account-2025-10-31.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 195,
+                  "modified": "2025-11-12T09:42:41.000Z"
+                },
+                {
+                  "id": "1bCz9AHN4W6PnoOXQl-MGtR-wvy-aVB2Z",
+                  "name": "EC_BSI25-426_06.10.2025 PAID.pdf",
+                  "path": "2025/October 2025/Invoices/EC_BSI25-426_06.10.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 200,
+                  "modified": "2025-10-13T08:17:34.000Z"
+                },
+                {
+                  "id": "1oGqQrB8uOmg1AoMB8LmWGrH8yZ3_AToX",
+                  "name": "EC_BSI25-437_13.10.2025.pdf",
+                  "path": "2025/October 2025/Invoices/EC_BSI25-437_13.10.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 201,
+                  "modified": "2025-10-13T08:17:24.000Z"
+                },
+                {
+                  "id": "1LdjYZJt-CEkrwg3VGKTldMT-PLRNa-1P",
+                  "name": "EC_BSI25-444_20.10.2025.pdf",
+                  "path": "2025/October 2025/Invoices/EC_BSI25-444_20.10.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 200,
+                  "modified": "2025-10-28T05:56:39.000Z"
+                },
+                {
+                  "id": "1A7FIlssWngkRMPItDB9Dhbv4hiGZ0x-2",
+                  "name": "EC_BSI25-450_27.10.2025.pdf",
+                  "path": "2025/October 2025/Invoices/EC_BSI25-450_27.10.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 201,
+                  "modified": "2025-11-03T08:28:11.000Z"
+                },
+                {
+                  "id": "1KdUImoXOM66GQQr4RZtGKlRQshDANtjE",
+                  "name": "EC_BSI25-455_31.10.2025.pdf",
+                  "path": "2025/October 2025/Invoices/EC_BSI25-455_31.10.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 200,
+                  "modified": "2025-11-06T08:50:58.000Z"
+                },
+                {
+                  "id": "10dfyA_eib3c3etFaFNSouac71dE6DRsV",
+                  "name": "FOOD SOLUTION INVOICE Paid.pdf",
+                  "path": "2025/October 2025/Invoices/FOOD SOLUTION INVOICE Paid.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 558,
+                  "modified": "2025-10-11T05:02:59.000Z"
+                },
+                {
+                  "id": "18ImNMcYEW3lClIkablcpgC86P3fz2XFb",
+                  "name": "invoice-2152-2025.pdf",
+                  "path": "2025/October 2025/Invoices/invoice-2152-2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 31,
+                  "modified": "2025-11-04T15:39:57.000Z"
+                },
+                {
+                  "id": "1Roe5gzD-1TTo5vWwm3BGhgJKI2BAlDx4",
+                  "name": "Invoice_CP8419514-53988_110502025.pdf",
+                  "path": "2025/October 2025/Invoices/Invoice_CP8419514-53988_110502025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 14,
+                  "modified": "2025-11-05T09:23:15.000Z"
+                },
+                {
+                  "id": "1T_hmlr2xn0x-wr6mS5a2OeThDRSjEsdP",
+                  "name": "LGX05881 PAID.pdf",
+                  "path": "2025/October 2025/Invoices/LGX05881 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 84,
+                  "modified": "2025-10-19T06:14:04.000Z"
+                },
+                {
+                  "id": "1Vu86j9qqAZMTQWzj8W-DJmPr6xr7gHQg",
+                  "name": "LGX05902.pdf",
+                  "path": "2025/October 2025/Invoices/LGX05902.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 83,
+                  "modified": "2025-11-03T08:23:21.000Z"
+                },
+                {
+                  "id": "1f5HrvRljCAplXlqhMaYla7X3mIS9Yxfr",
+                  "name": "LICDSO202500055707.pdf",
+                  "path": "2025/October 2025/Invoices/LICDSO202500055707.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 12,
+                  "modified": "2025-10-20T11:05:33.000Z"
+                },
+                {
+                  "id": "1k07B95yPGf7SKaETxmPRYYCbTDI383ME",
+                  "name": "LRE202500054347.pdf",
+                  "path": "2025/October 2025/Invoices/LRE202500054347.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 12,
+                  "modified": "2025-10-20T11:05:22.000Z"
+                },
+                {
+                  "id": "1mhir5jeYP1EjrRawVN3noEA69tmZXTVd",
+                  "name": "LRE202500054348.pdf",
+                  "path": "2025/October 2025/Invoices/LRE202500054348.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 12,
+                  "modified": "2025-10-20T11:05:28.000Z"
+                },
+                {
+                  "id": "1zzn0O8ej6yHeefBnaT4pGWdITNWs3saN",
+                  "name": "Stripe Tax Invoice JOUHVU98-2025-10-RC.pdf",
+                  "path": "2025/October 2025/Invoices/Stripe Tax Invoice JOUHVU98-2025-10-RC.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 37,
+                  "modified": "2025-11-06T08:53:00.000Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1-6ISpRQlJP78qMIki1mcIVjX1N8hta_0",
+          "name": "September 2025",
+          "path": "2025/September 2025",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2025-10-01T09:51:54.923Z",
+          "children": [
+            {
+              "id": "1v9tljrD6YXy7-kuIQpo2N0YsRCn9K7SR",
+              "name": "Bank statements",
+              "path": "2025/September 2025/Bank statements",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-10-01T09:55:03.079Z",
+              "children": [
+                {
+                  "id": "1wRD3nDWsfmjIdrUx1rhjNGbNXDNBz3XO",
+                  "name": "Account_Statement_019100409172.pdf",
+                  "path": "2025/September 2025/Bank statements/Account_Statement_019100409172.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 63,
+                  "modified": "2025-10-01T09:54:10.000Z"
+                },
+                {
+                  "id": "1jp9fhIK1kPk7TXhhFgek9OXG0DnDlFf2",
+                  "name": "Account_Statement_019100409172.xlsx",
+                  "path": "2025/September 2025/Bank statements/Account_Statement_019100409172.xlsx",
+                  "type": "file",
+                  "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "size_kb": 4,
+                  "modified": "2025-10-01T09:54:08.000Z"
+                },
+                {
+                  "id": "1rwtwsADSAQ_k__NmSt9nJmom9iwWiLRy",
+                  "name": "statement(Sep 1, 2025 - Sep 30, 2025).csv",
+                  "path": "2025/September 2025/Bank statements/statement(Sep 1, 2025 - Sep 30, 2025).csv",
+                  "type": "file",
+                  "mimeType": "text/csv",
+                  "size_kb": 9,
+                  "modified": "2025-10-01T09:55:55.000Z"
+                },
+                {
+                  "id": "1Zq7II6h8ewGymM-rwbUdXxkgf2YACsj6",
+                  "name": "statement(Sep 1, 2025 - Sep 30, 2025).pdf",
+                  "path": "2025/September 2025/Bank statements/statement(Sep 1, 2025 - Sep 30, 2025).pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 105,
+                  "modified": "2025-10-01T09:56:07.000Z"
+                }
+              ]
+            },
+            {
+              "id": "1u_hPK-FFhUm1aCDBO65kIcgNKxSSU5--",
+              "name": "Invoices",
+              "path": "2025/September 2025/Invoices",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2025-10-01T09:54:56.902Z",
+              "children": [
+                {
+                  "id": "1Tsk_KnzpqIWE5lx8eN9xFZ74MFBIarEz",
+                  "name": "2025-09-14T06-31 Transaction #24497837926568990-24638291085856998.pdf",
+                  "path": "2025/September 2025/Invoices/2025-09-14T06-31 Transaction #24497837926568990-24638291085856998.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 1028,
+                  "modified": "2025-10-01T10:02:31.000Z"
+                },
+                {
+                  "id": "1XW0_HUIS6qtlgHO65Q1ru1ZaMX5jUfrI",
+                  "name": "2025-09-22T14-53 Transaction #24655657084120401-24655657114120398.pdf",
+                  "path": "2025/September 2025/Invoices/2025-09-22T14-53 Transaction #24655657084120401-24655657114120398.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 1041,
+                  "modified": "2025-10-01T10:02:18.000Z"
+                },
+                {
+                  "id": "1bHd43j3STXx1gW8HONctwUtMjadGfGNR",
+                  "name": "2025-09-30T12-38 Transaction #24761449540207825-24533988776287231.pdf",
+                  "path": "2025/September 2025/Invoices/2025-09-30T12-38 Transaction #24761449540207825-24533988776287231.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 1041,
+                  "modified": "2025-10-01T10:01:10.000Z"
+                },
+                {
+                  "id": "1tOj0hWXheGaexfpVz3N3GnOlb4WjoYW3",
+                  "name": "2025-7519 Paid.pdf",
+                  "path": "2025/September 2025/Invoices/2025-7519 Paid.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 357,
+                  "modified": "2025-09-17T06:22:36.000Z"
+                },
+                {
+                  "id": "1tRdJRrbHLSnqzXIdjoUBN7uVkCpnqi8T",
+                  "name": "5531956020242031_20250930.pdf",
+                  "path": "2025/September 2025/Invoices/5531956020242031_20250930.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 96,
+                  "modified": "2025-10-04T07:18:23.000Z"
+                },
+                {
+                  "id": "1srggnOJ88GL6vbXPGXMLV6TzD9EhULx7",
+                  "name": "EC_BSI25-362_8.9.2025 PAID.pdf",
+                  "path": "2025/September 2025/Invoices/EC_BSI25-362_8.9.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 67,
+                  "modified": "2025-09-09T05:33:48.000Z"
+                },
+                {
+                  "id": "10gkqGPHu4Bz4mTeytG9ljM35--xGuJTI",
+                  "name": "EC_BSI25-369_15.9.2025 PAID.pdf",
+                  "path": "2025/September 2025/Invoices/EC_BSI25-369_15.9.2025 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 67,
+                  "modified": "2025-09-17T06:19:00.000Z"
+                },
+                {
+                  "id": "16paR-zXuLSHYtxuAZ7WZntZJb0xz1_z7",
+                  "name": "EC_BSI25-377_22.9.2025.pdf",
+                  "path": "2025/September 2025/Invoices/EC_BSI25-377_22.9.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 62,
+                  "modified": "2025-09-23T05:18:31.000Z"
+                },
+                {
+                  "id": "1VHu048H0qjdpUY-k9FmVdbwBZ5B9jBdp",
+                  "name": "EC_BSI25-383_29.9.2025.pdf",
+                  "path": "2025/September 2025/Invoices/EC_BSI25-383_29.9.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 200,
+                  "modified": "2025-10-01T09:30:14.000Z"
+                },
+                {
+                  "id": "1qaaMbckxrDzw9vSsduiazyZAV5fDqnwD",
+                  "name": "EC_BSI25-393_30.9.2025.pdf",
+                  "path": "2025/September 2025/Invoices/EC_BSI25-393_30.9.2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 199,
+                  "modified": "2025-10-04T07:02:04.000Z"
+                },
+                {
+                  "id": "1QII7opwzXK3iD648xZQqQ5ThTE1itZDv",
+                  "name": "INV- Eat Clean.pdf",
+                  "path": "2025/September 2025/Invoices/INV- Eat Clean.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 34,
+                  "modified": "2025-10-08T11:52:23.000Z"
+                },
+                {
+                  "id": "1nqY5DNWtGb1dImkgEGZWqdJJMMfegGv7",
+                  "name": "Invoice USEO INV-48186 PAID.pdf",
+                  "path": "2025/September 2025/Invoices/Invoice USEO INV-48186 PAID.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 102,
+                  "modified": "2025-09-24T09:59:31.000Z"
+                },
+                {
+                  "id": "11-rQnUaI8-7oeziHem09nYHIgXtPoYv1",
+                  "name": "invoice-1924-2025.pdf",
+                  "path": "2025/September 2025/Invoices/invoice-1924-2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 30,
+                  "modified": "2025-10-03T09:13:57.000Z"
+                },
+                {
+                  "id": "1boUKb7Nd8EQjl7wPAmYJUcEPB0K2M-At",
+                  "name": "invoice-1946-2025.pdf",
+                  "path": "2025/September 2025/Invoices/invoice-1946-2025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 30,
+                  "modified": "2025-10-04T07:12:23.000Z"
+                },
+                {
+                  "id": "1DpBjuRFNWaP94C5lov2fKhSSPCZ9sdlS",
+                  "name": "Invoice_CP8229815-53988_100602025.pdf",
+                  "path": "2025/September 2025/Invoices/Invoice_CP8229815-53988_100602025.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 14,
+                  "modified": "2025-10-06T05:34:33.000Z"
+                },
+                {
+                  "id": "1yBh6ufD6p1Gr8FLIkvXaw1XRLkWwej0Y",
+                  "name": "Invoice_INV1867_from_Pointspay_Management_FZCO.pdf",
+                  "path": "2025/September 2025/Invoices/Invoice_INV1867_from_Pointspay_Management_FZCO.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 21,
+                  "modified": "2025-10-04T07:25:28.000Z"
+                },
+                {
+                  "id": "1BQ5VliGSSbg2vs3k6jVF-L3xkapK-HEB",
+                  "name": "LGX05770 Paid.pdf",
+                  "path": "2025/September 2025/Invoices/LGX05770 Paid.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 84,
+                  "modified": "2025-09-17T08:46:28.000Z"
+                },
+                {
+                  "id": "1ejMS9mM8xMNHyG8xjaGv7WKo_g-w3Skr",
+                  "name": "LGX05808.pdf",
+                  "path": "2025/September 2025/Invoices/LGX05808.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 84,
+                  "modified": "2025-10-02T09:36:07.000Z"
+                },
+                {
+                  "id": "1w0gaxhVthvYdV0AL1kcysigylS8A5e2K",
+                  "name": "LNKD_INVOICE_781148082084.pdf",
+                  "path": "2025/September 2025/Invoices/LNKD_INVOICE_781148082084.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 107,
+                  "modified": "2025-10-02T07:53:58.000Z"
+                },
+                {
+                  "id": "1H0kws4Xsv-79nB1QYeDXzDfzZrdqmcyM",
+                  "name": "PPC Shop Invoice Report (FOOD SOLUTIONS TECH FZCO - Eat Clean) 01.09.2025-30.09.2025.xls",
+                  "path": "2025/September 2025/Invoices/PPC Shop Invoice Report (FOOD SOLUTIONS TECH FZCO - Eat Clean) 01.09.2025-30.09.2025.xls",
+                  "type": "file",
+                  "mimeType": "application/vnd.ms-excel",
+                  "size_kb": 34,
+                  "modified": "2025-10-06T05:49:11.000Z"
+                },
+                {
+                  "id": "1k-sNWPmQKh7u61Pw3PGcN0rRbg-ggHrg",
+                  "name": "Statement Of Account- Eat Clean.pdf",
+                  "path": "2025/September 2025/Invoices/Statement Of Account- Eat Clean.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 736,
+                  "modified": "2025-10-08T11:52:26.000Z"
+                },
+                {
+                  "id": "1fZap942KxRVaVDUsE6CHJZEyHt7RUoRQ",
+                  "name": "Stripe Tax Invoice JOUHVU98-2025-09-RC.pdf",
+                  "path": "2025/September 2025/Invoices/Stripe Tax Invoice JOUHVU98-2025-09-RC.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 37,
+                  "modified": "2025-10-06T04:00:15.000Z"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1Nd1fWOm-kW-BuuM52Qe4yZiq9kNSo1z4",
+      "name": "February 2026",
+      "path": "February 2026",
+      "type": "folder",
+      "mimeType": "application/vnd.google-apps.folder",
+      "size_kb": 0,
+      "modified": "2026-04-24T06:47:32.826Z",
+      "children": [
+        {
+          "id": "1IpTL9Y2rVfAwQD6lBHzjZQsEjZ6Z6eDo",
+          "name": "Bank statement",
+          "path": "February 2026/Bank statement",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-03-05T09:17:15.828Z",
+          "children": [
+            {
+              "id": "1M8gfA2EthV3wkwYyMxfgiS-wH3nBzqCN",
+              "name": "MASHREQ_CONSOLIDATED_SUMMARY_eSTATEMENT_PASS 013246197pdf.pdf",
+              "path": "February 2026/Bank statement/MASHREQ_CONSOLIDATED_SUMMARY_eSTATEMENT_PASS 013246197pdf.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 362,
+              "modified": "2026-03-05T09:15:55.000Z"
+            },
+            {
+              "id": "1L1aLC87Mlu4QgAfvGqOqONt-IZ6oFGJ1",
+              "name": "statement(Feb 1, 2026 - Feb 28, 2026).csv",
+              "path": "February 2026/Bank statement/statement(Feb 1, 2026 - Feb 28, 2026).csv",
+              "type": "file",
+              "mimeType": "text/csv",
+              "size_kb": 11,
+              "modified": "2026-03-05T09:12:16.000Z"
+            },
+            {
+              "id": "1UHG_LZRVKl4PRT7QPZHsXFC2-d4lFzd4",
+              "name": "statement(Feb 1, 2026 - Feb 28, 2026).pdf",
+              "path": "February 2026/Bank statement/statement(Feb 1, 2026 - Feb 28, 2026).pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 130,
+              "modified": "2026-03-05T09:12:30.000Z"
+            }
+          ]
+        },
+        {
+          "id": "1Krrx_TURjIsMZ6QNJVEI2sYFNuAYHHEl",
+          "name": "Invoices",
+          "path": "February 2026/Invoices",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-03-05T09:17:22.026Z",
+          "children": [
+            {
+              "id": "1aXYj5lJrrK_K95jnLGqLdmn3cp59zqfp",
+              "name": "16127-Food Solution - Stickers PAID.pdf",
+              "path": "February 2026/Invoices/16127-Food Solution - Stickers PAID.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 412,
+              "modified": "2026-02-17T11:58:51.000Z"
+            },
+            {
+              "id": "1MEtSIxK7NLHZpMGOw8TL4Kc__uBb1XqH",
+              "name": "2026-02-02T06-47 Transaction #25711383311881103-25812486518437451.pdf",
+              "path": "February 2026/Invoices/2026-02-02T06-47 Transaction #25711383311881103-25812486518437451.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 1028,
+              "modified": "2026-03-05T09:11:25.000Z"
+            },
+            {
+              "id": "10tj0lq9OhoTOpJAqheE5mA3gtB3U_O38",
+              "name": "2026-02-19T08-10 Transaction #25877525545266874-26033512819668146.pdf",
+              "path": "February 2026/Invoices/2026-02-19T08-10 Transaction #25877525545266874-26033512819668146.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 1028,
+              "modified": "2026-03-05T09:11:20.000Z"
+            },
+            {
+              "id": "17-zKL7igfC4RrrujhWGdv3iIQVLE0UIj",
+              "name": "2026-03-05_9d7808981a4a2791-SEA_T889023571_invoice SALARY.pdf",
+              "path": "February 2026/Invoices/2026-03-05_9d7808981a4a2791-SEA_T889023571_invoice SALARY.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 17,
+              "modified": "2026-03-05T09:18:32.000Z"
+            },
+            {
+              "id": "1DuAmgMkLo-BNt_EwpWDVeD0w_jFTGSqv",
+              "name": "2026-03-05_9d7808b9ad042791-SEA_T891210702_invoice SALARY.pdf",
+              "path": "February 2026/Invoices/2026-03-05_9d7808b9ad042791-SEA_T891210702_invoice SALARY.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 17,
+              "modified": "2026-03-05T09:18:35.000Z"
+            },
+            {
+              "id": "1Dzgb-Tb5XSGB_QhivduQDb1mYunSXoFJ",
+              "name": "2026-03-05_9d7808ccb9e62791-SEA_T893343612_invoice SALARY.pdf",
+              "path": "February 2026/Invoices/2026-03-05_9d7808ccb9e62791-SEA_T893343612_invoice SALARY.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 17,
+              "modified": "2026-03-05T09:18:38.000Z"
+            },
+            {
+              "id": "11DscNDn2HpD060Gh5oD3pDIaIrYJaHj2",
+              "name": "2026-03-05_9d7808dbfa5d2791-SEA_T895470939_invoice SALARY.pdf",
+              "path": "February 2026/Invoices/2026-03-05_9d7808dbfa5d2791-SEA_T895470939_invoice SALARY.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 17,
+              "modified": "2026-03-05T09:18:40.000Z"
+            },
+            {
+              "id": "1g-pJYAFJ75cVR6DM92jm46XDxZKMjl6Q",
+              "name": "2026-1393 PAID.pdf",
+              "path": "February 2026/Invoices/2026-1393 PAID.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 142,
+              "modified": "2026-03-03T09:08:27.000Z"
+            },
+            {
+              "id": "12PMcuRYwRCRx07ojBY1f6UwlUUcn0VMN",
+              "name": "5531956020242031_20260228.pdf",
+              "path": "February 2026/Invoices/5531956020242031_20260228.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 102,
+              "modified": "2026-03-05T09:28:50.000Z"
+            },
+            {
+              "id": "18vwmZeauA-oMPTA7W-B3KgrXMIISZLuE",
+              "name": "eat-clean-invoice-2026-02-28.pdf",
+              "path": "February 2026/Invoices/eat-clean-invoice-2026-02-28.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 36,
+              "modified": "2026-03-04T08:56:22.000Z"
+            },
+            {
+              "id": "1uFIGBh0eA4hR9w8t7WNafQg7cIF_IBNB",
+              "name": "eat-clean-statement-of-account-2026-02-28.pdf",
+              "path": "February 2026/Invoices/eat-clean-statement-of-account-2026-02-28.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 191,
+              "modified": "2026-03-04T08:56:32.000Z"
+            },
+            {
+              "id": "1NLCWVnXofds6oldEwMC-IeijFNkyRaQ4",
+              "name": "invoice-479-2026.pdf",
+              "path": "February 2026/Invoices/invoice-479-2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 31,
+              "modified": "2026-03-04T07:56:16.000Z"
+            },
+            {
+              "id": "1B78o5GXf-RIPPqWyDiliEBtpdRX1bAYj",
+              "name": "Invoice_BSI26051_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "path": "February 2026/Invoices/Invoice_BSI26051_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 56,
+              "modified": "2026-02-26T16:01:27.000Z"
+            },
+            {
+              "id": "1jMeLg5RMm86oDT4PMrUrlCKiYW4-D318",
+              "name": "Invoice_BSI26054_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "path": "February 2026/Invoices/Invoice_BSI26054_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 57,
+              "modified": "2026-02-17T07:42:37.000Z"
+            },
+            {
+              "id": "1Lg18AT2rvP4l-xLx-x09BJzycxKEY5Kl",
+              "name": "Invoice_BSI26058_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "February 2026/Invoices/Invoice_BSI26058_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 57,
+              "modified": "2026-02-26T16:03:31.000Z"
+            },
+            {
+              "id": "1zrW_UVXO3PJ_-2pPxtWrXMPgOqbu0Ren",
+              "name": "Invoice_BSI26063_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "February 2026/Invoices/Invoice_BSI26063_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 56,
+              "modified": "2026-03-03T08:42:24.000Z"
+            },
+            {
+              "id": "17MGnLFGmnA2grlzivfCzUYnmmhkRTYNt",
+              "name": "Invoice_CP9305219-53988_030402026.pdf",
+              "path": "February 2026/Invoices/Invoice_CP9305219-53988_030402026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 14,
+              "modified": "2026-03-04T10:55:37.000Z"
+            },
+            {
+              "id": "12tZ4wREDLKheivu5gUJukeDP_GuQEJEd",
+              "name": "LGX06290.pdf",
+              "path": "February 2026/Invoices/LGX06290.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 84,
+              "modified": "2026-02-20T06:34:25.000Z"
+            },
+            {
+              "id": "1zJnmad8AEdcLP1R3C1bAmOXv99sUSi0_",
+              "name": "LGX06312.pdf",
+              "path": "February 2026/Invoices/LGX06312.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 83,
+              "modified": "2026-03-03T09:11:11.000Z"
+            }
+          ]
+        },
+        {
+          "id": "1d-1WHzy3mif32lW06QTANSpkgfHEmQFW",
+          "name": "Reports",
+          "path": "February 2026/Reports",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-03-05T09:17:27.489Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "1y8BZhznCiRbz-oj_6MXVchaAEd0xLK46",
+      "name": "January 2026",
+      "path": "January 2026",
+      "type": "folder",
+      "mimeType": "application/vnd.google-apps.folder",
+      "size_kb": 0,
+      "modified": "2026-04-24T06:46:22.952Z",
+      "children": [
+        {
+          "id": "1AEWE-H5-p3wAfGQNXYidRDdZKpg796DA",
+          "name": "Bank statements",
+          "path": "January 2026/Bank statements",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-02-02T07:38:51.633Z",
+          "children": [
+            {
+              "id": "12HArWP6pPFZGCIsR6g-FTNNbFUY1iZD5",
+              "name": "Account_Statement_019100409172-4.pdf",
+              "path": "January 2026/Bank statements/Account_Statement_019100409172-4.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 57,
+              "modified": "2026-02-03T07:28:07.000Z"
+            },
+            {
+              "id": "1Nh09isEHPAa_k976h58yQ3cg3_WN3HJq",
+              "name": "Account_Statement_019100409172.xlsx",
+              "path": "January 2026/Bank statements/Account_Statement_019100409172.xlsx",
+              "type": "file",
+              "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "size_kb": 3,
+              "modified": "2026-02-03T07:28:05.000Z"
+            },
+            {
+              "id": "1U-ydyRNhAaQ3DEpJO6aPyqE1lYsIavJO",
+              "name": "statement(Jan 1, 2026 - Jan 31, 2026).pdf",
+              "path": "January 2026/Bank statements/statement(Jan 1, 2026 - Jan 31, 2026).pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 123,
+              "modified": "2026-02-03T07:30:02.000Z"
+            },
+            {
+              "id": "19u9QuOs8PmXoEL0ho0vSE9GwrKGdFNem",
+              "name": "statement(Jan 1, 2026 - Jan 31, 2027.csv",
+              "path": "January 2026/Bank statements/statement(Jan 1, 2026 - Jan 31, 2027.csv",
+              "type": "file",
+              "mimeType": "text/csv",
+              "size_kb": 2,
+              "modified": "2026-02-03T07:29:54.000Z"
+            }
+          ]
+        },
+        {
+          "id": "1rYWJ44gtQbbia-j2B1F3Myfmy_13n3Nm",
+          "name": "Invoices",
+          "path": "January 2026/Invoices",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-02-02T07:38:43.609Z",
+          "children": [
+            {
+              "id": "1ghO1w9qgcVtrhsZbVu9oiz4fRgycHNa5",
+              "name": "2026-0151..pdf",
+              "path": "January 2026/Invoices/2026-0151..pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 135,
+              "modified": "2026-01-20T10:03:01.000Z"
+            },
+            {
+              "id": "1LZTlBPRIQ-VwzvG82vwZiSwVL8v8xesM",
+              "name": "5480652940.pdf",
+              "path": "January 2026/Invoices/5480652940.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 91,
+              "modified": "2026-02-03T07:07:22.000Z"
+            },
+            {
+              "id": "10vvzMlULHUFPSceCmLU8GGYlNOzIs4Bs",
+              "name": "eat-clean-invoice-2026-01-31.pdf",
+              "path": "January 2026/Invoices/eat-clean-invoice-2026-01-31.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 36,
+              "modified": "2026-02-06T13:00:33.000Z"
+            },
+            {
+              "id": "1x1U24qiTvhX80uUxLQyWOfYQ19EshA6m",
+              "name": "eat-clean-statement-of-account-2026-01-31.pdf",
+              "path": "January 2026/Invoices/eat-clean-statement-of-account-2026-01-31.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 187,
+              "modified": "2026-02-06T13:00:42.000Z"
+            },
+            {
+              "id": "16QGYN3nNmiOhbk9JVB1BFbbjhoJgREqv",
+              "name": "Eat_Clean_476634996.pdf",
+              "path": "January 2026/Invoices/Eat_Clean_476634996.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 60,
+              "modified": "2026-01-20T07:53:12.000Z"
+            },
+            {
+              "id": "1HyMY8iqiP0EKsu995MYHAWhXHwBvOqVF",
+              "name": "Invoice_BSI26001_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "path": "January 2026/Invoices/Invoice_BSI26001_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 56,
+              "modified": "2026-01-20T10:15:56.000Z"
+            },
+            {
+              "id": "1KxUvG7DSO2BtH-d-gMvn-KyueBQgFE9M",
+              "name": "Invoice_BSI26005_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "path": "January 2026/Invoices/Invoice_BSI26005_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 56,
+              "modified": "2026-01-13T07:39:47.000Z"
+            },
+            {
+              "id": "1WujXDl9kC8wFm9dXvaCih0_UKwutm-aZ",
+              "name": "Invoice_BSI26012_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "January 2026/Invoices/Invoice_BSI26012_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 56,
+              "modified": "2026-01-20T08:26:54.000Z"
+            },
+            {
+              "id": "1k2L3lz61pXepbqKvU4WXZ1wQttrUvb7A",
+              "name": "Invoice_BSI26016_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "January 2026/Invoices/Invoice_BSI26016_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 56,
+              "modified": "2026-01-31T07:34:05.000Z"
+            },
+            {
+              "id": "12dfwMfA2ifYHQ4KZiO2utGbSbhuZOvzF",
+              "name": "Invoice_BSI26022_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "January 2026/Invoices/Invoice_BSI26022_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 56,
+              "modified": "2026-02-02T13:30:54.000Z"
+            },
+            {
+              "id": "1jmh8GJ2-1UcU544SqWZfDKg_ORTW4F5N",
+              "name": "Invoice_CP9101251-53988_020602026.pdf",
+              "path": "January 2026/Invoices/Invoice_CP9101251-53988_020602026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 14,
+              "modified": "2026-02-06T12:15:31.000Z"
+            },
+            {
+              "id": "1Gh8kBgaUH9n7SyTDWyM4NTcz9iC_yw1F",
+              "name": "LGX06193.pdf",
+              "path": "January 2026/Invoices/LGX06193.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 83,
+              "modified": "2026-01-20T10:17:14.000Z"
+            },
+            {
+              "id": "1LyOkU7O6dr0dKdKPotD3qSk0VqKI95Tl",
+              "name": "LGX06211.pdf",
+              "path": "January 2026/Invoices/LGX06211.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 83,
+              "modified": "2026-02-02T13:30:22.000Z"
+            },
+            {
+              "id": "1YGMASj74Guizdbs9XEFhni9bZUTKC7C2",
+              "name": "Stripe Tax Invoice JOUHVU98-2026-01-RC.pdf",
+              "path": "January 2026/Invoices/Stripe Tax Invoice JOUHVU98-2026-01-RC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 37,
+              "modified": "2026-02-06T12:14:18.000Z"
+            },
+            {
+              "id": "1udqNjh4JCknUiuym-Uokdxv2aKmpE8Wl",
+              "name": "UpWork Marketing Agency",
+              "path": "January 2026/Invoices/UpWork Marketing Agency",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2026-02-03T07:25:59.167Z",
+              "children": [
+                {
+                  "id": "16ct_yh8PDo6KE65Y-iIf-gzYuGDrHxC2",
+                  "name": "2026-01-13_9bd380dd9bbfdcc1-SEA_T880778203_invoice Marketing.pdf",
+                  "path": "January 2026/Invoices/UpWork Marketing Agency/2026-01-13_9bd380dd9bbfdcc1-SEA_T880778203_invoice Marketing.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 18,
+                  "modified": "2026-01-13T08:25:32.000Z"
+                }
+              ]
+            },
+            {
+              "id": "14E1wyO_8BDlJ-prAKvTa7U3Diir8RbKa",
+              "name": "UpWork Salary",
+              "path": "January 2026/Invoices/UpWork Salary",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2026-02-03T07:25:45.109Z",
+              "children": [
+                {
+                  "id": "1zSShi38-swwNjmNQhbcXMOdrRFhjSS4n",
+                  "name": "2026-01-13_9bd380bf0fe4dcc1-SEA_T880656660_invoice salary.pdf",
+                  "path": "January 2026/Invoices/UpWork Salary/2026-01-13_9bd380bf0fe4dcc1-SEA_T880656660_invoice salary.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-01-13T08:25:29.000Z"
+                },
+                {
+                  "id": "1ef-JhZSdc3ktWgRKoM7_L1isvb3l-It6",
+                  "name": "2026-01-13_9bd380f2dbc6dcc1-SEA_T882684966_invoice salary.pdf",
+                  "path": "January 2026/Invoices/UpWork Salary/2026-01-13_9bd380f2dbc6dcc1-SEA_T882684966_invoice salary.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-01-13T08:25:35.000Z"
+                },
+                {
+                  "id": "1ucokzA6UPqPQdcbDNFOmwpY7XwhlMr5o",
+                  "name": "2026-02-03_9c802e672ff43a54-SEA_T884749746_invoice salary.pdf",
+                  "path": "January 2026/Invoices/UpWork Salary/2026-02-03_9c802e672ff43a54-SEA_T884749746_invoice salary.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-02-03T07:23:11.000Z"
+                },
+                {
+                  "id": "1Popk19qIYxKwgNI1DPhv8Tpc3poufVe9",
+                  "name": "2026-02-03_9c802e7ae9163a54-SEA_T886848064_invoice salary.pdf",
+                  "path": "January 2026/Invoices/UpWork Salary/2026-02-03_9c802e7ae9163a54-SEA_T886848064_invoice salary.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-02-03T07:23:14.000Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1QINBJ5p-kRkvPqGt-0icJ69B2lMoBJgU",
+          "name": "Reports",
+          "path": "January 2026/Reports",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-02-02T07:38:58.211Z",
+          "children": [
+            {
+              "id": "1_6QTqMS1zEq_jrOnjdUmXnaL4LtsHZLW",
+              "name": "Balance Sheet As of 31 Jan 2026.pdf",
+              "path": "January 2026/Reports/Balance Sheet As of 31 Jan 2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 22,
+              "modified": "2026-02-26T06:20:36.000Z"
+            },
+            {
+              "id": "163ChB9Vtr4b1p8ZqH2Rqj6Pw1FjU-1TU",
+              "name": "CAC- FST.xlsx",
+              "path": "January 2026/Reports/CAC- FST.xlsx",
+              "type": "file",
+              "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "size_kb": 89,
+              "modified": "2026-02-26T06:40:54.000Z"
+            },
+            {
+              "id": "1wrrb68RJlgtgz9JVei-zyUEvWQO8fXl2",
+              "name": "Profit and Loss Jan - Dec 2024,2025.pdf",
+              "path": "January 2026/Reports/Profit and Loss Jan - Dec 2024,2025.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 23,
+              "modified": "2026-02-26T06:23:06.000Z"
+            },
+            {
+              "id": "1JKDVUMDIdSZfcs2VK2maPyJIKIicWsJL",
+              "name": "Profit and Loss Jan 2025, 2026.pdf",
+              "path": "January 2026/Reports/Profit and Loss Jan 2025, 2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 20,
+              "modified": "2026-02-26T06:21:11.000Z"
+            },
+            {
+              "id": "1VDhyx2D4XYrRUG-ZZHaLFwY0op7616nm",
+              "name": "Profit and Loss Jan 2026.pdf",
+              "path": "January 2026/Reports/Profit and Loss Jan 2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 19,
+              "modified": "2026-02-26T06:20:50.000Z"
+            },
+            {
+              "id": "1YeA9MKAvXCVXKVzZae-2jCaZmQpDejkK",
+              "name": "Revenue analyze.xlsx",
+              "path": "January 2026/Reports/Revenue analyze.xlsx",
+              "type": "file",
+              "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "size_kb": 12,
+              "modified": "2026-02-26T06:40:58.000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1ZDHBmIQzrK8y9W_Ddz7-cSb8cKL1kgtN",
+      "name": "March 2026",
+      "path": "March 2026",
+      "type": "folder",
+      "mimeType": "application/vnd.google-apps.folder",
+      "size_kb": 0,
+      "modified": "2026-04-24T06:46:22.945Z",
+      "children": [
+        {
+          "id": "1MsXhzn3BDTOYCZ01JiIVjrGPb0UtR_5W",
+          "name": "Bank statements",
+          "path": "March 2026/Bank statements",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-04-02T11:25:56.976Z",
+          "children": [
+            {
+              "id": "1hJmiMFRtnZ6lshpZhHFfS2-E1E8wT5A2",
+              "name": "statement(Mar 1, 2026 - Mar 31, 2026).csv",
+              "path": "March 2026/Bank statements/statement(Mar 1, 2026 - Mar 31, 2026).csv",
+              "type": "file",
+              "mimeType": "text/csv",
+              "size_kb": 32,
+              "modified": "2026-04-02T11:28:13.000Z"
+            },
+            {
+              "id": "1m0x7cmyxrYqDKDOU9tKGQRcgVA0uiMHd",
+              "name": "statement(Mar 1, 2026 - Mar 31, 2026).pdf",
+              "path": "March 2026/Bank statements/statement(Mar 1, 2026 - Mar 31, 2026).pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 148,
+              "modified": "2026-04-02T11:27:16.000Z"
+            }
+          ]
+        },
+        {
+          "id": "1W-BOkrv7j5ceGeMYtEkO0tMJ-xGlvCUP",
+          "name": "Invoices",
+          "path": "March 2026/Invoices",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-04-24T08:59:41.053Z",
+          "children": [
+            {
+              "id": "14dMIgKKlapAf5Em5rqs-p1yU-ty12kYi",
+              "name": "2026-03-01T06-34 Transaction #25979969721689126-26198541433165288.pdf",
+              "path": "March 2026/Invoices/2026-03-01T06-34 Transaction #25979969721689126-26198541433165288.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 1028,
+              "modified": "2026-04-02T13:26:12.000Z"
+            },
+            {
+              "id": "1eml8blPyVQ-u_fboxbcNdKhPi4ZriWkT",
+              "name": "2026-03-01T06-34 Transaction #26090147664004665-26198540816498683.pdf",
+              "path": "March 2026/Invoices/2026-03-01T06-34 Transaction #26090147664004665-26198540816498683.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 1028,
+              "modified": "2026-04-02T13:26:05.000Z"
+            },
+            {
+              "id": "1xhIR0xFcTBkgWUIarGj17Uj-5dK61THp",
+              "name": "2026-03-20T09-26 Transaction #26392828653736564-26284219821264114.pdf",
+              "path": "March 2026/Invoices/2026-03-20T09-26 Transaction #26392828653736564-26284219821264114.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 1028,
+              "modified": "2026-04-02T13:26:18.000Z"
+            },
+            {
+              "id": "1uU5QNXhpbWjOvrHpA1s6mogosZlsexkN",
+              "name": "2026-03-22T06-13 Transaction #26306451512374278-26467092112976877.pdf",
+              "path": "March 2026/Invoices/2026-03-22T06-13 Transaction #26306451512374278-26467092112976877.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 1028,
+              "modified": "2026-04-02T13:26:24.000Z"
+            },
+            {
+              "id": "1o8BUt3EhLkWhb4eIKLvS-gI33kKJqI9E",
+              "name": "5531956020242031_20260331.pdf",
+              "path": "March 2026/Invoices/5531956020242031_20260331.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 65,
+              "modified": "2026-04-02T15:12:15.000Z"
+            },
+            {
+              "id": "1cwiAImlHBBcnQgsaMshX9tcCml7DkzgV",
+              "name": "6341203c-5b3a-4c0d-9d10-5471b752a788.pdf",
+              "path": "March 2026/Invoices/6341203c-5b3a-4c0d-9d10-5471b752a788.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 57,
+              "modified": "2026-04-04T10:43:03.000Z"
+            },
+            {
+              "id": "1E4dEpk0Kmsle4CRxa-te1DBjAEFaBGUY",
+              "name": "eat-clean-invoice-2026-03-31.pdf",
+              "path": "March 2026/Invoices/eat-clean-invoice-2026-03-31.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 36,
+              "modified": "2026-04-03T13:30:09.000Z"
+            },
+            {
+              "id": "1LCMdZ4rLLOrA8GyQwV7xIN-4774cSIAw",
+              "name": "eat-clean-statement-of-account-2026-03-31.pdf",
+              "path": "March 2026/Invoices/eat-clean-statement-of-account-2026-03-31.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 191,
+              "modified": "2026-04-03T13:30:20.000Z"
+            },
+            {
+              "id": "1RIpI1x7gZPGuuCZBp-2fwxW4j_ddFLO0",
+              "name": "invoice-669-2026.pdf",
+              "path": "March 2026/Invoices/invoice-669-2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 34,
+              "modified": "2026-04-02T11:32:58.000Z"
+            },
+            {
+              "id": "1cH5FqjzU0d0R25UIi2fG1fc59wG3ZkJ9",
+              "name": "Invoice_BSI26094_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "path": "March 2026/Invoices/Invoice_BSI26094_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC PAID.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 56,
+              "modified": "2026-03-12T05:33:43.000Z"
+            },
+            {
+              "id": "1vd7iSoK6rYYRV0Zceqw2pKyNG3I6gHMg",
+              "name": "Invoice_BSI26097_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "March 2026/Invoices/Invoice_BSI26097_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 57,
+              "modified": "2026-03-17T07:51:44.000Z"
+            },
+            {
+              "id": "1Fhfa_UHjKQBUgXh5GiK4fnc1k4jGa4-J",
+              "name": "Invoice_BSI26100_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "March 2026/Invoices/Invoice_BSI26100_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 57,
+              "modified": "2026-03-23T13:37:35.000Z"
+            },
+            {
+              "id": "1VNG11MuLIh4eHIE9NCC_hIS_-BvGsZaz",
+              "name": "Invoice_BSI26103_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "March 2026/Invoices/Invoice_BSI26103_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 57,
+              "modified": "2026-03-31T15:38:09.000Z"
+            },
+            {
+              "id": "1DIgQNrHYqJrUBrXgY7Lf3slm5fN62dC4",
+              "name": "Invoice_BSI26108_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "path": "March 2026/Invoices/Invoice_BSI26108_from_BASILIGO_RESTAURANT__SOLE_PROPRIETORSHIP_LLC.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 57,
+              "modified": "2026-04-02T11:29:47.000Z"
+            },
+            {
+              "id": "1WQMQerAX4ruowlpbmaRF7_CS-REUVYNI",
+              "name": "Invoice_CP9508732-53988_040602026.pdf",
+              "path": "March 2026/Invoices/Invoice_CP9508732-53988_040602026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 14,
+              "modified": "2026-04-06T07:04:47.000Z"
+            },
+            {
+              "id": "17SdrwSVjm8Bx3rZ_fbPBB_G4Crw8iw_S",
+              "name": "LGX06437.pdf",
+              "path": "March 2026/Invoices/LGX06437.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 83,
+              "modified": "2026-04-05T12:27:25.000Z"
+            },
+            {
+              "id": "1b99pLXi2GwXk3VzYLh1d5jPeNnp9Jish",
+              "name": "Marketing UPWORK",
+              "path": "March 2026/Invoices/Marketing UPWORK",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2026-04-04T09:35:10.125Z",
+              "children": [
+                {
+                  "id": "1NistOEpFqRaOgavympI8EPJQoDo28LJ5",
+                  "name": "2026-04-04_9e6f50391a081d87-PDX_T898215819_invoice.pdf",
+                  "path": "March 2026/Invoices/Marketing UPWORK/2026-04-04_9e6f50391a081d87-PDX_T898215819_invoice.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 18,
+                  "modified": "2026-04-04T09:33:47.000Z"
+                }
+              ]
+            },
+            {
+              "id": "1kT4aQjXS_BaCQNlppbd1ALUdzptIxSar",
+              "name": "SALARY UPWORK - PUT INTO SALARY",
+              "path": "March 2026/Invoices/SALARY UPWORK - PUT INTO SALARY",
+              "type": "folder",
+              "mimeType": "application/vnd.google-apps.folder",
+              "size_kb": 0,
+              "modified": "2026-04-04T09:32:29.177Z",
+              "children": [
+                {
+                  "id": "1n6-r1c72EcRy7F3Bm7GDI40TzE3gkhE-",
+                  "name": "2026-04-04_9e6f4db26c3e1d87-SEA_T906155085_invoice.pdf",
+                  "path": "March 2026/Invoices/SALARY UPWORK - PUT INTO SALARY/2026-04-04_9e6f4db26c3e1d87-SEA_T906155085_invoice.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-04-04T09:32:04.000Z"
+                },
+                {
+                  "id": "1MYoRCzFaMf0TSV_92qnpK5bDbemSj_Pg",
+                  "name": "2026-04-04_9e6f4dce5e081d87-PDX_T904032327_invoice.pdf",
+                  "path": "March 2026/Invoices/SALARY UPWORK - PUT INTO SALARY/2026-04-04_9e6f4dce5e081d87-PDX_T904032327_invoice.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-04-04T09:32:07.000Z"
+                },
+                {
+                  "id": "1v9LZzpW-t7TojmIILz7vv8DbtWwIIIZZ",
+                  "name": "2026-04-04_9e6f4ddd7bfd1d87-DXB_T901969302_invoice.pdf",
+                  "path": "March 2026/Invoices/SALARY UPWORK - PUT INTO SALARY/2026-04-04_9e6f4ddd7bfd1d87-DXB_T901969302_invoice.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-04-04T09:32:09.000Z"
+                },
+                {
+                  "id": "1vnRt4oYNVt_NnOlbScAGXLpatFTtuVwx",
+                  "name": "2026-04-04_9e6f4dec4d691d87-SEA_T899827588_invoice.pdf",
+                  "path": "March 2026/Invoices/SALARY UPWORK - PUT INTO SALARY/2026-04-04_9e6f4dec4d691d87-SEA_T899827588_invoice.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-04-04T09:32:12.000Z"
+                },
+                {
+                  "id": "1YgLg6HyWJFnTSCuXFlAjaE7BGQF0Gu0a",
+                  "name": "2026-04-04_9e6f4dfa79ca1d87-PDX_T897676404_invoice.pdf",
+                  "path": "March 2026/Invoices/SALARY UPWORK - PUT INTO SALARY/2026-04-04_9e6f4dfa79ca1d87-PDX_T897676404_invoice.pdf",
+                  "type": "file",
+                  "mimeType": "application/pdf",
+                  "size_kb": 17,
+                  "modified": "2026-04-04T09:32:14.000Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1ayaTIdA7itaR4YcPJrB-5w_FY_2TDN4s",
+          "name": "Reports",
+          "path": "March 2026/Reports",
+          "type": "folder",
+          "mimeType": "application/vnd.google-apps.folder",
+          "size_kb": 0,
+          "modified": "2026-04-24T09:00:08.979Z",
+          "children": [
+            {
+              "id": "12wUFx-Jec44fqVu7qTs2ytrq1ACEF3WT",
+              "name": "Balance Sheet As of 31 Mar 2026.pdf",
+              "path": "March 2026/Reports/Balance Sheet As of 31 Mar 2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 23,
+              "modified": "2026-04-08T12:31:53.051Z"
+            },
+            {
+              "id": "1UlO8t_Vcb1BPXrbG3xjgCK9f1icflItA",
+              "name": "CAC- FST.xlsx",
+              "path": "March 2026/Reports/CAC- FST.xlsx",
+              "type": "file",
+              "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "size_kb": 89,
+              "modified": "2026-04-08T12:31:38.224Z"
+            },
+            {
+              "id": "1YP1uAPdq2gnUBwToxLdmKXE1NqurTTfy",
+              "name": "INCOME STATEMENT FST - PL_March 2026.xlsx",
+              "path": "March 2026/Reports/INCOME STATEMENT FST - PL_March 2026.xlsx",
+              "type": "file",
+              "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "size_kb": 44,
+              "modified": "2026-04-18T08:00:07.554Z"
+            },
+            {
+              "id": "1cj9pvo5LWPBZH3fO-SdnKt_GFWSqb1rG",
+              "name": "Profit and Loss  Jan To Mar 2026.pdf",
+              "path": "March 2026/Reports/Profit and Loss  Jan To Mar 2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 22,
+              "modified": "2026-04-08T12:31:50.230Z"
+            },
+            {
+              "id": "1_D_6MUitasGNu40midMgS1k6auGOkqAJ",
+              "name": "Profit and Loss Feb and March 2026.pdf",
+              "path": "March 2026/Reports/Profit and Loss Feb and March 2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 23,
+              "modified": "2026-04-08T12:31:47.222Z"
+            },
+            {
+              "id": "17b6WY58nVRaaBxIZIQjZKHZZCSksyJTQ",
+              "name": "Profit and Loss March 2026.pdf",
+              "path": "March 2026/Reports/Profit and Loss March 2026.pdf",
+              "type": "file",
+              "mimeType": "application/pdf",
+              "size_kb": 21,
+              "modified": "2026-04-08T12:31:45.094Z"
+            },
+            {
+              "id": "1unPudlcdnY5BN9OUW0yy0Puq2FitavGF",
+              "name": "Revenue analyze.xlsx",
+              "path": "March 2026/Reports/Revenue analyze.xlsx",
+              "type": "file",
+              "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "size_kb": 13,
+              "modified": "2026-04-08T12:31:41.320Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1S7SrqikB8wXeanDT09VNI-oDjBW9aSvp",
+      "name": "Revenue Monthly Reconciliation ",
+      "path": "Revenue Monthly Reconciliation ",
+      "type": "folder",
+      "mimeType": "application/vnd.google-apps.folder",
+      "size_kb": 0,
+      "modified": "2025-09-23T07:28:22.284Z",
+      "children": [
+        {
+          "id": "1mwhNXr5tYopd2t0j-4OBH5jjeq5qABnV",
+          "name": "Revenue analyze.xlsx",
+          "path": "Revenue Monthly Reconciliation /Revenue analyze.xlsx",
+          "type": "file",
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size_kb": 10,
+          "modified": "2025-09-23T12:17:38.000Z"
+        }
+      ]
+    }
+  ],
+  "last_scanned": "2026-04-24 13:16:37"
+}

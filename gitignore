@@ -1,0 +1,17 @@
+# Google service account credentials — NEVER commit this
+credentials.json
+
+# Python cache
+*.pyc
+__pycache__/
+
+# macOS
+.DS_Store
+
+# Temporary files
+tmp/
+*.tmp
+*.log
+
+# Local config overrides
+accounting_config.json

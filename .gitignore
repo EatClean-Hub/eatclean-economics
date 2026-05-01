@@ -1,0 +1,10 @@
+credentials.json
+*.pyc
+__pycache__/
+.DS_Store
+.claude/
+tmp/
+*.tmp
+*.log
+accounting_config.json
+data/
