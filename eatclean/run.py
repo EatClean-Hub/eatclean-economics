@@ -16,7 +16,7 @@ from openpyxl.utils import get_column_letter
 from config import TARGET_MARGIN, DELIVERY_PER_DAY, PACKAGING_PER_DAY, VAT_DIVISOR, CLASSPASS_PRICE
 from drive_client import get_service, discover_folders, download_folder_to_temp, upload_file
 from parsers import (build_price_lookup, build_gram_lookup,
-                     load_all_selections, load_all_invoices, load_orders, _normalize)
+                     load_all_selections, load_all_invoices, load_orders, _normalize, _normalize_variants)
 
 # ─── STYLES ───────────────────────────────────────────────────────────────────
 HDR_FILL   = PatternFill("solid", start_color="1F4E79")
@@ -96,9 +96,10 @@ def build_wide(orders_df: pd.DataFrame,
                          order_start >= data_start and
                          order_end   <= data_end)
 
-        # Match person in daily selections
+        # Match person in daily selections — try all name variants (handles reversed names)
+        name_variants = _normalize_variants(order["full_name"])
         person_data = daily_cost[
-            (daily_cost["person_norm"] == person_norm) &
+            (daily_cost["person_norm"].isin(name_variants)) &
             (daily_cost["date"] >= order_start) &
             (daily_cost["date"] <= order_end)
         ] if not daily_cost.empty else pd.DataFrame()
@@ -540,8 +541,8 @@ def main():
         sel_hp   = df_sel[df_sel["group"]=="hp"]        if not df_sel.empty else pd.DataFrame()
         sel_val  = df_sel[df_sel["group"]=="valorem"]   if not df_sel.empty else pd.DataFrame()
         sel_cp   = df_sel[df_sel["group"]=="classpass"] if not df_sel.empty else pd.DataFrame()
-        # Complimentary uses regular selections matched by name
-        sel_comp = df_sel[df_sel["group"]=="regular"]   if not df_sel.empty else pd.DataFrame()
+        # Complimentary — uses regular selections (comp clients appear as regular in daily files)
+        sel_comp = df_sel[df_sel["group"].isin(["regular", "complimentary"])] if not df_sel.empty else pd.DataFrame()
 
         # ── Split orders by group ─────────────────────────────────────────────
         if not df_orders.empty:
@@ -557,8 +558,8 @@ def main():
         # ── Build wide tables ──────────────────────────────────────────────────
         print("\nBuilding assessment tables...")
         df_wide_reg  = build_wide(ord_reg,  sel_reg,  all_dates) if not ord_reg.empty  else pd.DataFrame()
-        df_wide_hp   = build_wide(ord_hp,   sel_hp,   all_dates) if not ord_hp.empty   else pd.DataFrame()
-        df_wide_val  = build_wide(ord_val,  sel_val,  all_dates) if not ord_val.empty  else pd.DataFrame()
+        df_wide_hp   = build_wide(ord_hp,   df_sel,   all_dates) if not ord_hp.empty   else pd.DataFrame()  # uses all selections for cross-group name matching
+        df_wide_val  = build_wide(ord_val,  df_sel,   all_dates) if not ord_val.empty  else pd.DataFrame()  # uses all selections for cross-group name matching
         df_wide_cp   = build_wide(ord_cp,   sel_cp,   all_dates, fixed_revenue=CLASSPASS_PRICE) if not ord_cp.empty   else pd.DataFrame()
         df_wide_comp = build_wide(ord_comp, sel_comp, all_dates) if not ord_comp.empty else pd.DataFrame()
 

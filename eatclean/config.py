@@ -85,89 +85,53 @@ for (pg, mt, tier), price in BENCHMARKS.items():
 # ─── MANUAL PRICE OVERRIDES ───────────────────────────────────────────────────
 # Dishes missing or mismatched in price list — confirmed manually
 MANUAL_PRICES = {
+    # ── HISTORICAL ALIASES — old names still appearing in selections ──────────
+    "Keto Fajitas LOWCAL":   18.9333,   # → now Keto Beef Fajitas LOWCAL in Nutribot
+    "Carrots Pancake LOWCAL":  9.3429,  # → now Carrot Pancakes LOWCAL in Nutribot
+
+    # ── SPECIAL CASES — name in selections has no tier suffix ─────────────────
+    "LEAN BEEF BURGER":  21.22,   # selections use no tier; price list has LEAN variant
+    "Meatballs & Mash":  19.80,   # selections sometimes omit tier
+
+    # ── GENUINELY MISSING FROM PRICE LIST ────────────────────────────────────
+    # Dishes that appear in selections but have no matching entry in price list
+    "Keto Beef Gyro With Tzatsiki LEAN":   20.5333,  # only LOWCAL+BUILD in price list
+    "LEAN BEEF BURGER":                    21.2200,  # no-tier version, Valorem uses this
+    "Meatballs & Mash":                    20.7900,  # no-tier version
     "Lemon Garlic Tuna Pasta LEAN":          21.95,
-    "Vermicelli Shrimp Noodle Bowl LEAN":    17.26,
-    "Vermicelli Shrimp Noodle Bowl LOWCAL":  16.87,
-    "Vermicelli Shrimp Noodle Bowl BUILD":   17.99,
+    "Vermicelli Shrimp Noodle Bowl LEAN":    17.2571,
+    "Vermicelli Shrimp Noodle Bowl LOWCAL":  16.8667,
+    "Vermicelli Shrimp Noodle Bowl BUILD":   17.9905,
     "Lime Ginger Energy Bites LEAN":          3.91,
     "Lime Ginger Energy Bites LOWCAL":        3.91,
     "Low Carb Egg & Hash LEAN":               8.51,
     "Low Carb Egg & Hash LOWCAL":             9.98,
     "Low Carb Egg Wrap LEAN":                15.96,
+    "Low Carb Egg Wrap":                     15.20,
     "Moroccan Chicken Bowl LOWCAL":          13.16,
     "Moroccan Chicken Bowl":                 13.16,
     "Moroccan Meatballs & Couscous LOWCAL":  20.06,
-    "BUFFALO CHICKEN BOWL LOWCAL":           16.91,
-    "LEAN BEEF BURGER":                      21.22,
     "Grilled Chicken Burger":                12.90,
-    "Meatballs & Mash":                      20.79,
-    "Meatballs & Mash LEAN":                 21.95,
-    "Meatballs & Mash LOWCAL":               20.79,
-    "Meatballs & Mash BUILD":                25.52,
     "Nori Wraps BUILD":                      13.86,
-    "Super Spinach Crepe LEAN":              8.2286,   # case fix vs price list
-    "Super Spinach Crepe LOWCAL":             8.64,
-    "Super Spinach Crepe BUILD":            17.5333,   # case fix vs price list
-    "Philly Cheesesteak Mac N Cheese LOWCAL": 17.9048, # ALL CAPS in price list
-    "Philly Cheesesteak Mac N Cheese LEAN":  17.9048,
-    "Philly Cheesesteak Mac N Cheese BUILD":  21.80,
-    "Vermicelli Shrimp Noodle Bowl LEAN":    17.2571,  # lowercase 'bowl' in price list
-    "Vermicelli Shrimp Noodle Bowl LOWCAL":  16.8667,
-    "Vermicelli Shrimp Noodle Bowl BUILD":   17.9905,
-    "Fish With Spinach & Sweet Potato Mash LOWCAL": 15.2667,  # LOWCAL not in price list
+    "Fish With Spinach & Sweet Potato Mash LOWCAL": 15.2667,
     "Fish With Spinach & Sweet Potato Mash LEAN":   15.2667,
-    "Grilled Chicken Burger":               12.90,
-    # ── CASE MISMATCHES — price list uses ALL CAPS ────────────────────────────
-    # Italian Herb Chuck Roast
-    "Italian Herb Chuck Roast LOWCAL":  18.4000,
-    "Italian Herb Chuck Roast LEAN":    20.3048,
-    "Italian Herb Chuck Roast BUILD":   22.3048,
-    # Philly Cheesesteak Mac N Cheese
-    "Philly Cheesesteak Mac N Cheese LOWCAL": 17.9048,
-    "Philly Cheesesteak Mac N Cheese LEAN":   17.9048,
-    "Philly Cheesesteak Mac N Cheese BUILD":  21.8000,
-    # Meatballs & Mash
-    "Meatballs & Mash LOWCAL": 19.8000,
-    "Meatballs & Mash LEAN":   20.9048,
-    "Meatballs & Mash BUILD":  24.3048,
-    # Keto Beef Gyro — price list has lowercase 'with'
-    "Keto Beef Gyro With Tzatsiki LOWCAL": 18.9333,
-    "Keto Beef Gyro With Tzatsiki LEAN":   20.5333,
-    "Keto Beef Gyro With Tzatsiki BUILD":  23.8667,
-    # Teriyaki Chicken Thighs — price list has lowercase 'chicken thighs'
-    "Teriyaki Chicken Thighs LOWCAL": 16.9905,
-    "Teriyaki Chicken Thighs LEAN":   18.1333,
-    "Teriyaki Chicken Thighs BUILD":  19.7905,
-    "Keto Sweet and Sour Asian Chicken BUILD": 17.9619,  # price list lowercase, kitchen fixing
-    # Caponata Pasta — price list has lowercase 'pasta'
-    "Caponata Pasta LOWCAL": 12.7714,
-    "Caponata Pasta LEAN":   13.9333,
-    "Caponata Pasta BUILD":  15.2381,
-    # Chicken Cilantro Bowl — check against kitchen price list
-    # Beef Burrito — check against kitchen price list
-    # Cajun Spiced Fish — check against kitchen price list
-    # Black Pepper Prawns — check against kitchen price list
-    # ── HISTORICAL ALIASES — old names in existing files, fixed in Nutribot going forward ─
-    "Keto Fajitas LOWCAL":   18.9333,  # → now Keto Beef Fajitas LOWCAL in Nutribot
-    "Carrots Pancake LOWCAL":  9.3429,  # → now Carrot Pancakes LOWCAL in Nutribot
+    "(v) Southwest Pasta Salad LEAN":        14.80,
 
-
-
-    # ── MISSING DISHES — added from price_list_marked_no_blank.xlsx ──────────
-    "Beef Burrito LOWCAL":                  17.1714,
-    "Beef Burrito LEAN":                    17.5238,
-    "Black Pepper Prawns LOWCAL":           16.8476,
-    "Black Pepper Prawns LEAN":             16.8476,
-    "Cajun Spiced Fish LEAN":               14.7810,
-    "Cajun Spiced Fish LOWCAL":             14.1143,
-    "Fish Florentine with rice LOWCAL":     14.1143,
-    "Fish Florentine with rice LEAN":       14.9905,
-    "Chicken Cilantro Bowl LEAN":           16.4000,
-    "(v) Southwest Pasta Salad LEAN":       14.8000,   # price list: Southwest Pasta Salad LEAN
-    "Butternut Enchiladas LOWCAL":          13.6667,
-    "Low Carb Egg Wrap":                    15.2000,   # no tier suffix — both LEAN/LOWCAL same price
-
+    # ── VALOREM HISTORICAL — ALL CAPS names from past orders (Valorem formatting) ─
+    # These appeared in selections before Valorem corrected their order format.
+    # Going forward, ALL CAPS dish names will trigger an error flag in the report.
+    "BUFFALO CHICKEN BOWL LOWCAL":           16.91,
+    "BUFFALO CHICKEN BOWL LEAN":             17.91,
+    "BUFFALO CHICKEN BOWL BUILD":            19.91,
+    "ITALIAN HERB CHUCK ROAST LOWCAL":       18.40,
+    "ITALIAN HERB CHUCK ROAST LEAN":         20.3048,
+    "ITALIAN HERB CHUCK ROAST BUILD":        22.3048,
+    "LEAN BEEF BURGER":                      21.22,
+    "LEAN BEEF BURGER LOWCAL":               19.90,
+    "LEAN BEEF BURGER LEAN":                 21.22,
+    "LEAN BEEF BURGER BUILD":                23.50,
 }
+
 
 # ─── INVOICE COLUMN STRUCTURE ─────────────────────────────────────────────────
 # Each week block: type_col, dish_col, qty_col, price_col (1-indexed)

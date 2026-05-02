@@ -28,7 +28,7 @@ def reconcile(df_invoice: pd.DataFrame, df_selections: pd.DataFrame) -> pd.DataF
 
     # Aggregate selections: date × dish → total qty
     sel = (
-        df_selections[df_selections["group"].isin(["regular", "valorem"])]
+        df_selections[df_selections["group"].isin(["regular", "valorem", "hp"])]
         .groupby(["date", "dish_name"])["qty"]
         .sum()
         .reset_index()
@@ -203,7 +203,7 @@ def dishes_ranking(df_selections: pd.DataFrame) -> pd.DataFrame:
     if df_selections.empty:
         return pd.DataFrame()
     return (
-        df_selections[df_selections["group"].isin(["regular", "valorem"])]
+        df_selections[df_selections["group"].isin(["regular", "valorem", "hp"])]
         .groupby("dish_name")
         .agg(
             total_qty   =("qty",       "sum"),

@@ -18,7 +18,6 @@ SKIP_DISHES  = {
     "Eat Clean - Additional Items", "Type",
     # HP parsing artifacts — malformed lines in standard files
     "100 Carrots",
-    "Breakfast - High Protein150g Sunny Side Up Eggs (approx 3)",
     "120 Chicken Cilantro Lime",
     "200 Chicken Cilantro Lime",
 }
@@ -57,7 +56,7 @@ def build_price_lookup(price_list_path: str) -> dict:
                     if i == 0: continue  # skip header
                     if not row[0] or not row[1]: continue
                     try:
-                        name  = str(row[0]).strip()
+                        name  = re.sub(r" {2,}", " ", str(row[0]).strip())  # collapse double spaces
                         price = float(row[1]) / VAT_DIVISOR
                         if name and price > 0:
                             lookup[name] = round(price, 4)
@@ -77,67 +76,10 @@ def build_price_lookup(price_list_path: str) -> dict:
     if patched:
         print(f"  {patched} additional entries from MANUAL_PRICES patches")
 
+    # Build case-insensitive + whitespace-normalised index for get_price fallback
+    lookup["__lower__"] = {" ".join(k.lower().split()): v for k, v in lookup.items() if k != "__lower__"}
+
     return lookup
-
-    try:
-        wb = load_workbook(price_list_path, read_only=True, data_only=True)
-        sheets = wb.sheetnames
-
-        # ── Invoice format: 'Price List' sheet, col B = Price incl VAT ──────
-        if "Price List" in sheets:
-            ws = wb["Price List"]
-            for i, row in enumerate(ws.iter_rows(values_only=True)):
-                if i == 0: continue  # skip header
-                if not row[0] or not row[1]: continue
-                try:
-                    name  = str(row[0]).strip()
-                    price = float(row[1]) / VAT_DIVISOR  # incl → ex VAT
-                    if name and price > 0:
-                        lookup[name] = round(price, 4)
-                except (ValueError, TypeError):
-                    continue
-
-        # ── Original price list format: 'Sheet1' = ex-VAT ────────────────────
-        if "Sheet1" in sheets:
-            ws = wb["Sheet1"]
-            for i, row in enumerate(ws.iter_rows(values_only=True)):
-                if i == 0: continue  # skip header
-                if not row[0] or not row[1]: continue
-                try:
-                    name  = str(row[0]).strip()
-                    price = float(row[1])
-                    if name and price > 0 and name not in lookup:
-                        lookup[name] = round(price, 4)
-                except (ValueError, TypeError):
-                    continue
-
-        # ── New Items sheet ───────────────────────────────────────────────────
-        if "New Items" in sheets:
-            ws = wb["New Items"]
-            for i, row in enumerate(ws.iter_rows(values_only=True)):
-                if i == 0: continue
-                if not row[1] or not row[2]: continue
-                try:
-                    name  = str(row[1]).strip()
-                    price = float(row[2])
-                    if name and price > 0 and name not in lookup:
-                        lookup[name] = round(price, 4)
-                except (ValueError, TypeError):
-                    continue
-
-    except Exception as e:
-        print(f"  [WARN] Price lookup error: {e}")
-
-    # Manual overrides always applied
-    for k, v in MANUAL_PRICES.items():
-        if k not in lookup:
-            lookup[k] = v
-
-    # Build lowercase index for case-insensitive fallback
-    lookup["__lower__"] = {k.lower(): v for k, v in lookup.items()
-                           if not k.startswith("__")}
-    return lookup
-
 
 def build_gram_lookup(kg_price_list_path: str) -> dict:
     """Load KG-based prices. Returns {ingredient_name_lower: price_per_gram}."""
@@ -157,8 +99,9 @@ def build_gram_lookup(kg_price_list_path: str) -> dict:
             clean = re.sub(r"^(PROTEIN|CARBS|SAUCE|VEG)\s*-\s*", "", clean,
                            flags=re.IGNORECASE).strip()
             gram_lookup[clean.lower()] = row["price"] / 1000.0
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"  [WARN] gram_lookup failed: {e}")
+    print(f"  Gram lookup: {len(gram_lookup)} ingredients loaded")
     return gram_lookup
 
 
@@ -169,10 +112,11 @@ def get_price(dish_name: str, lookup: dict, gram_lookup: dict) -> float:
         return lookup[dish_name]
     # 2. Case-insensitive match via pre-built index
     lower_index = lookup.get("__lower__", {})
-    if dish_name.lower() in lower_index:
-        return lower_index[dish_name.lower()]
+    dish_lower = " ".join(dish_name.lower().split())
+    if dish_lower in lower_index:
+        return lower_index[dish_lower]
     # 3. Gram-based
-    m = re.match(r"^(\d+(?:\.\d+)?)g\s+(.+)$", dish_name, re.IGNORECASE)
+    m = re.match(r"^(\d+(?:\.\d+)?)g?\s+(.+)$", dish_name, re.IGNORECASE)
     if m:
         weight_g = float(m.group(1))
         ing = m.group(2).strip().lower()
@@ -201,18 +145,37 @@ def _parse_meal_lines(meals_raw: str, date_str: str,
             continue
         if line.upper().startswith("FOOD TO SERVE ONLY"):
             continue
-        _, dish_raw = line.split(":", 1)
+        meal_type_raw, dish_raw = line.split(":", 1)
         dish_raw = dish_raw.strip().replace("(x)", "").strip()
-        mult_match = re.match(r"^(\d+)x\s+", dish_raw)
-        mult = int(mult_match.group(1)) if mult_match else 1
-        if mult_match:
-            dish_raw = dish_raw[mult_match.end():]
+        # Check multiplier on meal type side first (e.g. "4x Lunch: DishName")
+        type_mult_match = re.match(r"^(\d+)x\s+", meal_type_raw.strip())
+        # Then check multiplier on dish side (e.g. "Lunch: 2x DishName")
+        dish_mult_match = re.match(r"^(\d+)x\s+", dish_raw)
+        if type_mult_match:
+            mult = int(type_mult_match.group(1))
+        elif dish_mult_match:
+            mult = int(dish_mult_match.group(1))
+            dish_raw = dish_raw[dish_mult_match.end():]
+        else:
+            mult = 1
         dish_name = re.sub(r"\s*-\s*\d+\s*$", "", dish_raw).strip()
         dish_name = re.sub(r"\s+", " ", dish_name)
+        # Strip meal-type prefixes concatenated by Nutribot (e.g. "Breakfast - High Protein150g...")
+        for _pfx in ("Breakfast - High Protein", "Eat Clean - Breakfast",
+                     "Eat Clean - Snacks", "Eat Clean - Mains", "Eat Clean - Additional Items"):
+            if dish_name.startswith(_pfx):
+                dish_name = dish_name[len(_pfx):].strip()
+                break
         if not dish_name or dish_name == "nan":
             continue
         price = get_price(dish_name, lookup, gram_lookup)
         is_gram = bool(re.match(r"^\d+(?:\.\d+)?g?\s", dish_name))
+        # ALL CAPS flag — excludes tier suffixes and short strings
+        _caps_words = set(dish_name.upper().split())
+        _tier_words = {"LOWCAL", "LEAN", "BUILD", "HP", "MP", "MYO", "CP"}
+        is_allcaps = (dish_name.isupper() and 
+                      len(dish_name) > 6 and 
+                      not _caps_words.issubset(_tier_words))
         records.append({
             "date":       date_str,
             "dish_name":  dish_name,
@@ -220,6 +183,7 @@ def _parse_meal_lines(meals_raw: str, date_str: str,
             "unit_cost":  price,
             "line_cost":  round(price * mult, 4),
             "zero_price": (price == 0 and not is_gram),
+            "allcaps_flag": is_allcaps,  # Valorem formatting error — dish name should not be ALL CAPS
         })
     return records
 
@@ -269,8 +233,27 @@ def parse_report_file(filepath: str, date_str: str,
 
 
 def _normalize(name: str) -> str:
+    # Strip leading prefixes: HP, MP, (C)
+    name = re.sub(r"^\(C\)\s+", "", name.strip(), flags=re.IGNORECASE)
     name = re.sub(r"^(HP|MP)\s+", "", name.strip(), flags=re.IGNORECASE)
+    # Strip corporate suffixes for Valorem matching
+    name = re.sub(r"\s+(LLC|FZE|FZCO|LTD|LIMITED|CO\.?|CORP\.?)\s*$", "", 
+                  name.strip(), flags=re.IGNORECASE)
     return re.sub(r"\s+", " ", name).lower().strip()
+
+
+def _normalize_variants(name: str) -> set:
+    """Return all name variants for fuzzy matching — normal and word-reversed."""
+    norm = _normalize(name)
+    parts = norm.split()
+    variants = {norm}
+    if len(parts) == 2:
+        variants.add(f"{parts[1]} {parts[0]}")  # reverse: "hamda al shamsi" ↔ "al shamsi hamda"
+    elif len(parts) >= 3:
+        # Try first word last: "hamda al shamsi" → "al shamsi hamda"
+        variants.add(" ".join(parts[1:] + [parts[0]]))
+        variants.add(" ".join([parts[-1]] + parts[:-1]))
+    return variants
 
 
 def _route(person: str, hp_norms: set) -> str:
