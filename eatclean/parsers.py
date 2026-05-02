@@ -19,6 +19,8 @@ SKIP_DISHES  = {
     # HP parsing artifacts — malformed lines in standard files
     "100 Carrots",
     "Breakfast - High Protein150g Sunny Side Up Eggs (approx 3)",
+    "120 Chicken Cilantro Lime",
+    "200 Chicken Cilantro Lime",
 }
 COMP_KW      = ["reduction", "compensation", "details of"]
 COLS_10      = ["customer_id", "person", "address", "meal_plan", "calories",
@@ -210,7 +212,7 @@ def _parse_meal_lines(meals_raw: str, date_str: str,
         if not dish_name or dish_name == "nan":
             continue
         price = get_price(dish_name, lookup, gram_lookup)
-        is_gram = bool(re.match(r"^\d+(?:\.\d+)?g\s", dish_name))
+        is_gram = bool(re.match(r"^\d+(?:\.\d+)?g?\s", dish_name))
         records.append({
             "date":       date_str,
             "dish_name":  dish_name,
@@ -454,11 +456,14 @@ def load_all_invoices() -> pd.DataFrame:
     invoice_dir = PATHS["invoices"]
     all_records = []
 
-    for root, dirs, files in os.walk(invoice_dir):
-        for fname in sorted(files):
+    seen_files = set()
+    for fname in sorted(os.listdir(invoice_dir)):
             if not fname.endswith(".xlsx"):
                 continue
-            filepath = os.path.join(root, fname)
+            filepath = os.path.join(invoice_dir, fname)
+            if filepath in seen_files:
+                continue
+            seen_files.add(filepath)
             try:
                 wb = load_workbook(filepath, read_only=True)
             except Exception as e:

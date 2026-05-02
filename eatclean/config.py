@@ -153,6 +153,20 @@ MANUAL_PRICES = {
 
 
 
+    # ── MISSING DISHES — added from price_list_marked_no_blank.xlsx ──────────
+    "Beef Burrito LOWCAL":                  17.1714,
+    "Beef Burrito LEAN":                    17.5238,
+    "Black Pepper Prawns LOWCAL":           16.8476,
+    "Black Pepper Prawns LEAN":             16.8476,
+    "Cajun Spiced Fish LEAN":               14.7810,
+    "Cajun Spiced Fish LOWCAL":             14.1143,
+    "Fish Florentine with rice LOWCAL":     14.1143,
+    "Fish Florentine with rice LEAN":       14.9905,
+    "Chicken Cilantro Bowl LEAN":           16.4000,
+    "(v) Southwest Pasta Salad LEAN":       14.8000,   # price list: Southwest Pasta Salad LEAN
+    "Butternut Enchiladas LOWCAL":          13.6667,
+    "Low Carb Egg Wrap":                    15.2000,   # no tier suffix — both LEAN/LOWCAL same price
+
 }
 
 # ─── INVOICE COLUMN STRUCTURE ─────────────────────────────────────────────────
