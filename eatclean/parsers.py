@@ -236,6 +236,8 @@ def _normalize(name: str) -> str:
     # Strip leading prefixes: HP, MP, (C)
     name = re.sub(r"^\(C\)\s+", "", name.strip(), flags=re.IGNORECASE)
     name = re.sub(r"^(HP|MP)\s+", "", name.strip(), flags=re.IGNORECASE)
+    # Strip trailing tags: MYO (Make Your Own HP clients)
+    name = re.sub(r"\s+MYO\s*$", "", name.strip(), flags=re.IGNORECASE)
     # Strip corporate suffixes for Valorem matching
     name = re.sub(r"\s+(LLC|FZE|FZCO|LTD|LIMITED|CO\.?|CORP\.?)\s*$", "", 
                   name.strip(), flags=re.IGNORECASE)
