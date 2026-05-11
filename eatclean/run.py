@@ -46,13 +46,13 @@ BODY_FONT  = Font(name="Arial", size=10)
 FIXED_COLS = ["Customer","Meal Plan","Meals","Paid Days","Actual Days",
               "Delivery Status",
               "Paid ex-VAT (AED)","Deposit (AED)","Net Revenue (AED)",
-              "Order Start","Order End","Data Complete",
+              "Order Start","Order End","Data Complete","Late Delivery Days",
               "Kitchen Cost (AED)","Delivery Cost (AED)","Packaging Cost (AED)",
               "Total Cost (AED)","Margin (AED)","Margin %"]
 AED_COLS   = {"Paid ex-VAT (AED)","Deposit (AED)","Net Revenue (AED)",
               "Kitchen Cost (AED)","Delivery Cost (AED)","Packaging Cost (AED)",
               "Total Cost (AED)","Margin (AED)"}
-DATE_START = len(FIXED_COLS) + 1  # col 18
+DATE_START = len(FIXED_COLS) + 1  # auto-calculated from FIXED_COLS
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -98,11 +98,40 @@ def build_wide(orders_df: pd.DataFrame,
 
         # Match person in daily selections — try all name variants (handles reversed names)
         name_variants = _normalize_variants(order["full_name"])
+        # Match within order period first
         person_data = daily_cost[
             (daily_cost["person_norm"].isin(name_variants)) &
             (daily_cost["date"] >= order_start) &
             (daily_cost["date"] <= order_end)
         ] if not daily_cost.empty else pd.DataFrame()
+
+        # Late delivery buffer: check selections AFTER order_end
+        # Covers: late deliveries, holidays, plan extensions
+        # Cap: exclude dates that fall within another order for the same client
+        other_order_dates = set()
+        for other_idx, other in orders_df.iterrows():
+            if other_idx == order.name: continue  # skip current order
+            if _normalize(other["full_name"]) in name_variants:
+                # Another order for same client — exclude its dates
+                o_start = other["Order date from"]
+                o_end   = other["Order date to"]
+                if not daily_cost.empty:
+                    overlap = daily_cost[
+                        (daily_cost["date"] >= o_start) &
+                        (daily_cost["date"] <= o_end)
+                    ]["date"]
+                    other_order_dates.update(overlap.tolist())
+
+        late_data = daily_cost[
+            (daily_cost["person_norm"].isin(name_variants)) &
+            (daily_cost["date"] > order_end) &
+            (~daily_cost["date"].isin(other_order_dates))
+        ] if not daily_cost.empty else pd.DataFrame()
+        if not late_data.empty:
+            late_days  = sorted(late_data["date"].dt.strftime("%Y-%m-%d").tolist())
+            person_data = pd.concat([person_data, late_data], ignore_index=True)
+        else:
+            late_days = []
 
         actual_days   = len(person_data)
         kitchen_cost  = round(person_data["day_cost"].sum(), 2) if not person_data.empty else 0
@@ -149,6 +178,7 @@ def build_wide(orders_df: pd.DataFrame,
             "Order Start":         order_start.strftime("%d %b %Y"),
             "Order End":           order_end.strftime("%d %b %Y"),
             "Data Complete":       "✅ Yes" if data_complete else "⏳ Partial",
+            "Late Delivery Days":  ", ".join(late_days) if late_days else None,
             "Kitchen Cost (AED)":  kitchen_cost if kitchen_cost > 0 else None,
             "Delivery Cost (AED)": delivery_cost if actual_days > 0 else None,
             "Packaging Cost (AED)":pack_cost     if actual_days > 0 else None,
@@ -157,13 +187,16 @@ def build_wide(orders_df: pd.DataFrame,
             "Margin %":            margin_pct,
         }
 
-        # Daily columns
+        # Daily columns — include regular days AND late delivery days
         for d in all_dates:
             d_ts = pd.Timestamp(d)
-            if order_start <= d_ts <= order_end and not person_data.empty:
+            if not person_data.empty:
                 day_rows = person_data[person_data["date"] == d_ts]
-                cost = round(day_rows["day_cost"].sum(), 2) if not day_rows.empty else None
-                row[d] = cost if (cost and cost > 0) else None
+                if not day_rows.empty:
+                    cost = round(day_rows["day_cost"].sum(), 2)
+                    row[d] = cost if cost > 0 else None
+                else:
+                    row[d] = None
             else:
                 row[d] = None
         rows.append(row)
@@ -189,9 +222,10 @@ def build_sheet(ws, df_wide, all_dates, title,
 
     label = "DAILY KITCHEN COST (AED)" + (f"  |  {note}" if note else "")
     ws.cell(row=1, column=DATE_START).value = label
-    ws.merge_cells(start_row=1, end_row=1,
-                   start_column=DATE_START,
-                   end_column=DATE_START+len(all_dates)-1)
+    if all_dates:  # only merge if there are date columns
+        ws.merge_cells(start_row=1, end_row=1,
+                       start_column=DATE_START,
+                       end_column=DATE_START+len(all_dates)-1)
     c = ws.cell(row=1, column=DATE_START)
     c.font=HDR_FONT; c.fill=d_hdr_fill; c.alignment=CTR; c.border=BORDER
     ws.row_dimensions[1].height = 18
@@ -482,9 +516,56 @@ def main():
             os.makedirs(d, exist_ok=True)
 
         if "daily_selections" in folders:
-            download_folder_to_temp(service, folders["daily_selections"], sel_tmp)
-            n = len(glob.glob(os.path.join(sel_tmp,"**","*.xlsx"), recursive=True))
-            print(f"  Selections: {n} files")
+            import shutil
+            cache_dir = os.path.join(os.path.dirname(__file__), ".selections_cache")
+            os.makedirs(cache_dir, exist_ok=True)
+
+            # Get list of remote files with their IDs
+            from drive_client import list_folder, list_subfolders, download_file
+            sel_folder_id = folders["daily_selections"]
+            remote_files = []
+            try:
+                for sf in list_subfolders(service, sel_folder_id):
+                    for f in list_folder(service, sf["id"]):
+                        if f["name"].endswith(".xlsx"):
+                            remote_files.append((f["id"], f["name"]))
+                for f in list_folder(service, sel_folder_id):
+                    if f["name"].endswith(".xlsx"):
+                        remote_files.append((f["id"], f["name"]))
+            except Exception as e:
+                print(f"  [WARN] Could not list remote files: {e}")
+
+            new_files = cached_files = 0
+            if remote_files:
+                for fid, fname in remote_files:
+                    cached_path = os.path.join(cache_dir, fname)
+                    dest_path   = os.path.join(sel_tmp, fname)
+                    if os.path.exists(cached_path):
+                        shutil.copy2(cached_path, dest_path)
+                        cached_files += 1
+                    else:
+                        try:
+                            download_file(service, fid, dest_path)
+                            shutil.copy2(dest_path, cached_path)
+                            new_files += 1
+                        except Exception:
+                            pass
+            else:
+                # Fallback: download everything
+                download_folder_to_temp(service, folders["daily_selections"], sel_tmp)
+
+            # Put files into date-based subfolders matching Drive structure
+            for f in glob.glob(os.path.join(sel_tmp, "*.xlsx")):
+                fname = os.path.basename(f)
+                m = re.search(r"(\d{4}-\d{2})", fname)
+                if m:
+                    month_dir = os.path.join(sel_tmp, m.group(1))
+                    os.makedirs(month_dir, exist_ok=True)
+                    import shutil as _sh
+                    _sh.move(f, os.path.join(month_dir, fname))
+
+            n = sum(len(glob.glob(os.path.join(sel_tmp, "**", "*.xlsx"), recursive=True)) for _ in [1])
+            print(f"  Selections: {n} files ({cached_files} cached, {new_files} new)")
         if "invoices" in folders:
             download_folder_to_temp(service, folders["invoices"], inv_tmp)
             n = len(glob.glob(os.path.join(inv_tmp,"**","*.xlsx"), recursive=True))
@@ -500,12 +581,22 @@ def main():
         # ── Price lookup — invoice file is the ONLY source ───────────────────
         print("\nBuilding price lookup...")
         inv_files  = glob.glob(os.path.join(inv_tmp, "**", "*.xlsx"), recursive=True)
-        price_path = inv_files[0] if inv_files else None
+        # Invoice = Eat Clean Sales file; dishes_list = separate file
+        price_path      = next((f for f in inv_files
+                                if "eat clean sales" in os.path.basename(f).lower()), None)
+        dishes_list_path = next((f for f in inv_files
+                                 if "dishes_list" in os.path.basename(f).lower()), None)
+        if not price_path:
+            # Fallback: first file that is NOT dishes_list
+            price_path = next((f for f in inv_files
+                               if "dishes_list" not in os.path.basename(f).lower()), None)
         if not price_path:
             print("  ❌ No invoice file found in 02 Invoices — cannot build price lookup")
             return
         print(f"  Invoice: {os.path.basename(price_path)}")
-        lookup      = build_price_lookup(price_path)
+        if dishes_list_path:
+            print(f"  Dishes list: {os.path.basename(dishes_list_path)}")
+        lookup      = build_price_lookup(price_path, dishes_list_path)
         gram_lookup = build_gram_lookup(price_path)
 
         # ── Orders ────────────────────────────────────────────────────────────
@@ -554,6 +645,26 @@ def main():
             ord_comp = df_orders[df_orders["is_comp"]]
         else:
             ord_reg = ord_hp = ord_val = ord_cp = ord_comp = pd.DataFrame()
+
+        # ── Pre-scan for late delivery dates before building wide tables ─────
+        # Find any selection dates beyond order_end for any client
+        # so all_dates includes those columns before build_wide runs
+        if not df_sel.empty and not df_orders.empty:
+            sel_dates = set(df_sel["date"].dt.normalize().unique())
+            extra_dates = set()
+            for _, order in df_orders.iterrows():
+                order_end = order["Order date to"]
+                name_vars = _normalize_variants(order["full_name"])
+                late = df_sel[
+                    (df_sel["date"] > order_end) &
+                    (df_sel["person"].apply(_normalize).isin(name_vars))
+                ]
+                for d in late["date"].dt.strftime("%Y-%m-%d").unique():
+                    if d not in all_dates:
+                        extra_dates.add(d)
+            if extra_dates:
+                all_dates = sorted(set(all_dates) | extra_dates)
+                print(f"  ⏰ {len(extra_dates)} late delivery date(s) pre-scanned: {sorted(extra_dates)}")
 
         # ── Build wide tables ──────────────────────────────────────────────────
         print("\nBuilding assessment tables...")

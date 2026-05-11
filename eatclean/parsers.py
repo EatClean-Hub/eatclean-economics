@@ -32,10 +32,11 @@ COLS_9       = ["customer_id", "person", "address", "meal_plan", "calories",
 # PRICE LOOKUP
 # ══════════════════════════════════════════════════════════════════════════════
 
-def build_price_lookup(price_list_path: str) -> dict:
+def build_price_lookup(price_list_path: str, dishes_list_path: str = None) -> dict:
     """
-    Load dish prices from the invoice Excel file (Price List sheet).
-    This is the ONLY price source — no fallback files.
+    Load dish prices from:
+    1. Invoice Excel file (Price List sheet) — primary source
+    2. dishes_list_FINAL.xlsx (Dishes List sheet) — secondary source, fills gaps
     Column A = dish name, Column B = price incl. VAT (divided by 1.05 → ex-VAT).
     MANUAL_PRICES in config.py patches known name mismatches on top.
     """
@@ -67,6 +68,29 @@ def build_price_lookup(price_list_path: str) -> dict:
         except Exception as e:
             print(f"  [WARN] Could not read invoice price list: {e}")
 
+    # ── Secondary source: dishes_list_FINAL.xlsx ────────────────────────────
+    if dishes_list_path and os.path.exists(dishes_list_path):
+        try:
+            wb2 = load_workbook(dishes_list_path, read_only=True, data_only=True)
+            sheet_name = next((s for s in wb2.sheetnames if "dish" in s.lower()), None)
+            if sheet_name:
+                ws2 = wb2[sheet_name]
+                dl_count = 0
+                for i, row in enumerate(ws2.iter_rows(values_only=True)):
+                    if i == 0: continue
+                    if not row[0] or not row[1]: continue
+                    try:
+                        name  = re.sub(r" {2,}", " ", str(row[0]).strip())
+                        price = float(row[1]) / VAT_DIVISOR
+                        if name and price > 0 and name not in lookup:
+                            lookup[name] = round(price, 4)
+                            dl_count += 1
+                    except (ValueError, TypeError):
+                        continue
+                print(f"  {dl_count} additional dishes loaded from dishes_list")
+        except Exception as e:
+            print(f"  [WARN] Could not read dishes_list: {e}")
+
     # Apply MANUAL_PRICES patches on top (case fixes + missing dishes)
     patched = 0
     for k, v in MANUAL_PRICES.items():
@@ -85,7 +109,16 @@ def build_gram_lookup(kg_price_list_path: str) -> dict:
     """Load KG-based prices. Returns {ingredient_name_lower: price_per_gram}."""
     gram_lookup = {}
     try:
-        df = pd.read_excel(kg_price_list_path, sheet_name="Sheet1", header=1)
+        # Find the correct sheet — look for one containing KG prices
+        xl = pd.ExcelFile(kg_price_list_path)
+        sheet_name = next(
+            (s for s in xl.sheet_names if any(
+                kw in s.lower() for kw in ["kg", "gram", "protein", "sheet1", "price list"]
+            )), xl.sheet_names[0] if xl.sheet_names else None
+        )
+        if not sheet_name:
+            raise ValueError("No suitable sheet found")
+        df = pd.read_excel(kg_price_list_path, sheet_name=sheet_name, header=1)
         df.columns = ["dish_name", "price", "retail"]
         df = df[["dish_name", "price"]].dropna(subset=["dish_name", "price"])
         df["price"] = pd.to_numeric(df["price"], errors="coerce")
@@ -166,6 +199,8 @@ def _parse_meal_lines(meals_raw: str, date_str: str,
             if dish_name.startswith(_pfx):
                 dish_name = dish_name[len(_pfx):].strip()
                 break
+        # Strip (V) prefix from dish names — vegan dishes in price list have no prefix
+        dish_name = re.sub(r"^\(V\)\s+", "", dish_name, flags=re.IGNORECASE).strip()
         if not dish_name or dish_name == "nan":
             continue
         price = get_price(dish_name, lookup, gram_lookup)
@@ -233,8 +268,9 @@ def parse_report_file(filepath: str, date_str: str,
 
 
 def _normalize(name: str) -> str:
-    # Strip leading prefixes: HP, MP, (C)
+    # Strip leading prefixes: HP, MP, (C), (V)
     name = re.sub(r"^\(C\)\s+", "", name.strip(), flags=re.IGNORECASE)
+    name = re.sub(r"^\(V\)\s+", "", name.strip(), flags=re.IGNORECASE)
     name = re.sub(r"^(HP|MP)\s+", "", name.strip(), flags=re.IGNORECASE)
     # Strip trailing tags: MYO (Make Your Own HP clients)
     name = re.sub(r"\s+MYO\s*$", "", name.strip(), flags=re.IGNORECASE)
